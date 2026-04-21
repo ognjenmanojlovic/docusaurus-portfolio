@@ -22,48 +22,62 @@
 }
 
 .kicker {
-  font-family: Quicksand;
+  font-family: 'Quicksand', system-ui, sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 32px;
   line-height: 120%;
-  letter-spacing: 0%;
   padding-bottom: 8px;
-
 }
 
 .name {
-  font-family: Quicksand;
+  margin: 0;
+  font-family: 'Quicksand', system-ui, sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 68px;
   line-height: 120%;
-  letter-spacing: 0%;
 }
 
 .role {
-  font-family: Quicksand;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  font-family: 'Quicksand', system-ui, sans-serif;
   font-weight: 500;
-  font-style: Medium;
-  font-size: 32px;
+  font-size: clamp(24px, 2.5vw, 34px);
   line-height: 120%;
-  letter-spacing: 0%;
-  padding-bottom: 40px;
+  white-space: nowrap;
+  color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 32px;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  color: #ffffff;
+  animation: blinkCursor 0.8s infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 49% {
+    opacity: 1;
+  }
+
+  50%, 100% {
+    opacity: 0;
+  }
 }
 
 .blurb {
   margin: 0;
   max-width: 664px;
-  font-family: Quicksand;
+  font-family: 'Quicksand', system-ui, sans-serif;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 22px;
   line-height: 120%;
-  letter-spacing: 0%;
   padding-bottom: 40px;
 }
 
-/* CTA button */
 .cta {
   display: inline-flex;
   align-items: center;
@@ -84,7 +98,6 @@
   background: #FFFFFFD9;
 }
 
-/* right picture (desktop) */
 .picCol {
   display: flex;
   justify-content: center;
@@ -99,19 +112,15 @@
   transform: scaleX(-1);
 }
 
-/* visibility helpers */
 .picMobile {
   display: none;
 }
 
-/* hidden on desktop */
 .picDesktop {
   display: flex;
 }
 
-/* shown on desktop */
-
-/* collapse to single column + center on smaller widths */
+/* mobile */
 @media (max-width: 768px) {
   .hero {
     padding: 0 6vw;
@@ -121,54 +130,47 @@
     grid-template-columns: 1fr;
     row-gap: 24px;
     justify-items: center;
-    /* center grid children */
   }
 
   .textCol {
-    align-items: left;
+    align-items: flex-start;
     text-align: left;
   }
 
   .kicker {
-    font-family: Quicksand;
-    font-weight: 400;
-    font-style: Regular;
     font-size: 24px;
-    line-height: 120%;
-    letter-spacing: 0%;
-    padding-bottom: 8px
+    padding-bottom: 8px;
   }
 
   .name {
     margin: 0;
-    font-family: Quicksand;
-    font-weight: 700;
-    font-style: Bold;
     font-size: 37px;
     line-height: 100%;
-    letter-spacing: 0%;
   }
 
   .role {
-    font-family: Quicksand;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 24px;
+    min-height: 32px;
+    font-size: 21px;
     line-height: 100%;
-    letter-spacing: 0%;
-    padding-top: 5px;
-    padding-bottom: 40px;
+    color: #ffffff;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    padding-top: 0;
+    padding-bottom: 0;
+    white-space: nowrap;
+  }
+
+  .cursor {
+    color: #ffffff;
   }
 
   .blurb {
     margin: 0;
     max-width: 325px;
-    font-family: Quicksand;
     font-weight: 500;
-    font-style: Medium;
     font-size: 16px;
     line-height: 120%;
-    letter-spacing: 0%;
     padding-top: 24px;
     padding-bottom: 40px;
   }
@@ -177,7 +179,6 @@
     font-size: 16px;
     margin-inline: auto;
   }
-
 
   .picDesktop {
     display: none;
