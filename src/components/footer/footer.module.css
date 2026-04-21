@@ -1,0 +1,95 @@
+.footer {
+  background-color: #262E34;
+  color: white;
+  padding: 40px 6vw;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.backToTop {
+  position: relative;
+  width: 40px;
+  height: 90px;
+  margin: 30px 0 70px 0;
+  display: grid;
+  place-items: center;
+  line-height: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.backToTop:focus-visible {
+  outline: 2px solid #9fb3c8;
+  outline-offset: 4px;
+}
+
+.copy {
+  margin: 0;
+  font-family: Quicksand;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0;
+  padding-bottom: 16px;
+}
+
+.legal {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #ffffff;
+  text-decoration: none;
+  padding-bottom: 32px;
+}
+
+.legal:hover {
+  text-decoration: underline;
+}
+
+
+.backToTop .icon,
+.backToTop .iconHover {
+  position: absolute;
+  inset: 0;
+  width: 40px;
+  height: 90px;
+  transition: opacity 150ms ease;
+  pointer-events: none;
+}
+
+
+
+.backToTop .iconHover {
+  display: none;
+}
+
+
+.backToTop:hover .iconHover {
+  display: initial;
+}
+
+@media (max-width: 768px) {
+  .backToTop {
+    height: 73px;
+  }
+
+  .backToTop .icon,
+  .backToTop .iconHover {
+    height: 73px;
+  }
+
+  .copy,
+  .legal {
+    font-size: 14px;
+  }
+}

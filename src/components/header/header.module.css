@@ -1,0 +1,260 @@
+.header {
+  position: relative;
+  background: #266AD9;
+  padding: 0 6vw;
+  padding-top: 0vw;
+  z-index: 100;
+  transition: transform 200ms ease;
+  will-change: transform;
+}
+
+.affixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+}
+
+.reveal {
+  transform: translateY(0);
+}
+
+.inner {
+  min-height: 0;
+  padding-block: clamp(.5rem, 2vw, 1.25rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(1rem, 4vw, 3rem);
+}
+
+.menu {
+  display: block;
+}
+
+.navList {
+  display: flex;
+  gap: clamp(1rem, 4vw, 3.5rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: #fff;
+  font-family: Quicksand;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.activeLink {
+  color: #262E34;
+}
+
+.lang {
+  display: flex;
+  gap: 10px;
+}
+
+.langBar {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.langBtn {
+  padding: .25rem .5rem;
+  border-radius: .3rem;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  /* cursor: pointer; */
+  font-family: Quicksand;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.langActive {
+background: #FFFFFF33;
+}
+
+/* ===== Mobile controls visibility ===== */
+.menuToggle {
+  display: none;
+
+}
+
+
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenuInner {
+  display: none;
+}
+
+.closeBtn {
+  display: none;
+}
+
+.langMenu {
+  display: none;
+}
+
+@media (max-width:768px) {
+  .header {
+    padding: 0 6vw;
+    padding-top: 2vw;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .langBar {
+    display: none;
+  }
+
+  .menuToggle {
+    display: flex;
+    color: #fff;
+    margin-left: auto;
+    width: 32px;
+    height: 28px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menuToggle span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: currentColor;
+  }
+
+  .mobileMenu {
+    display: block;
+    position: relative;
+    inset: 0;
+    z-index: 1000;
+    background: transparent;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .25s ease-out;
+  }
+
+
+  .mobileMenu[data-open="true"] {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .mobileMenuInner {
+    display: grid;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 23%;
+    background: #fff;
+    color: #266AD9;
+    grid-template-rows: auto 1fr auto;
+    padding-top: 50px;
+    transform: translateY(-100%);
+    transition: transform .25s ease-out;
+    will-change: transform;
+  }
+
+  .mobileMenu[data-open="true"] .mobileMenuInner {
+    transform: translateY(-50%);
+  }
+
+  .closeBtn {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 24px;
+    width: 36px;
+    height: 36px;
+    font-size: 48px;
+    line-height: 1;
+    border: 0;
+    background: transparent;
+    color: #266AD9;
+    cursor: pointer;
+    padding-top: 40px;
+  }
+
+  .menuStack {
+    list-style: none;
+    margin: 0;
+    padding: 40px 0 20px 0;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .menuLink {
+    color: #266AD9;
+    text-decoration: none;
+    font-family: Quicksand;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
+
+  .menuLink:hover {
+    text-decoration: underline;
+  }
+
+  .langMenu {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+
+  .mobileMenu :is(.langBtn, .langBtnMobile) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: clamp(46px, 120vw, 44px);
+    min-height: 0;
+    padding: 0 clamp(10px, 3vw, 30px);
+    line-height: 1;
+    white-space: nowrap;
+    border-radius: .5rem;
+    background: transparent;
+    color: #266AD9;
+    font-weight: 600;
+    font-size: 18px;
+    border: 0;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .mobileMenu :is(.langActive, .langActiveMobile) {
+    background: #266AD933;
+  }
+}
