@@ -1,0 +1,74 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Projects": {
+    "message": "Projects",
+    "description": "The label for category 'Projects' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Document Security Tools": {
+    "message": "Document Security Tools",
+    "description": "The label for category 'Document Security Tools' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.PDF Metadata Extractor": {
+    "message": "PDF Metadata Extractor",
+    "description": "The label for category 'PDF Metadata Extractor' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.PDF Metadata Cleaner": {
+    "message": "PDF Metadata Cleaner",
+    "description": "The label for category 'PDF Metadata Cleaner' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Juice Shop Master": {
+    "message": "Juice Shop Master",
+    "description": "The label for category 'Juice Shop Master' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Juice Shop Practice": {
+    "message": "Juice Shop Practice",
+    "description": "The label for category 'Juice Shop Practice' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.⭐ One-Star Challenges": {
+    "message": "⭐ One-Star Challenges",
+    "description": "The label for category '⭐ One-Star Challenges' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.⭐⭐ Two-Star Challenges": {
+    "message": "⭐⭐ Two-Star Challenges",
+    "description": "The label for category '⭐⭐ Two-Star Challenges' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.⭐⭐⭐ Three-Star Challenges": {
+    "message": "⭐⭐⭐ Three-Star Challenges",
+    "description": "The label for category '⭐⭐⭐ Three-Star Challenges' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Password Cracking": {
+    "message": "Password Cracking",
+    "description": "The label for category 'Password Cracking' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Custom Python Password Tools": {
+    "message": "Custom Python Password Tools",
+    "description": "The label for category 'Custom Python Password Tools' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Python Dictionary Attack": {
+    "message": "Python Dictionary Attack",
+    "description": "The label for category 'Python Dictionary Attack' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Python Mask Attack": {
+    "message": "Python Mask Attack",
+    "description": "The label for category 'Python Mask Attack' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.SHA512 Potfile Generator": {
+    "message": "SHA512 Potfile Generator",
+    "description": "The label for category 'SHA512 Potfile Generator' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Hashcat Lab": {
+    "message": "Hashcat Lab",
+    "description": "The label for category 'Hashcat Lab' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Python Security Tools": {
+    "message": "Python Security Tools",
+    "description": "The label for category 'Python Security Tools' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Port Scanner": {
+    "message": "Port Scanner",
+    "description": "The label for category 'Port Scanner' in sidebar 'tutorialSidebar'"
+  }
+}

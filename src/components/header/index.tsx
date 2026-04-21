@@ -1,24 +1,49 @@
-import React, { JSX, useEffect, useRef, useState } from 'react';
+import React, { JSX, useEffect, useMemo, useRef, useState } from 'react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './header.module.css';
 
-const LINKS = [
-  { id: 'hero', label: 'About me' },
-  { id: 'my-skills', label: 'My skills' },
-  { id: 'project-highlights', label: 'My projects' },
-  { id: 'contact', label: 'Contact' },
-  { url: '/docs', label: 'Docs', external: true },
-];
+type SectionLink = {
+  id: string;
+  label: string;
+};
 
-const REVEAL_AT = 120;   // start fixing header after this
-const SHOW_DELTA = 24;   // scroll up at least this much to show
-const HIDE_DELTA = 56;   // scroll down at least this much to hide
+type ExternalLink = {
+  url: string;
+  label: string;
+  external?: boolean;
+};
+
+type NavLink = SectionLink | ExternalLink;
+
+const REVEAL_AT = 120;
+const SHOW_DELTA = 24;
+const HIDE_DELTA = 56;
 
 export default function Header(): JSX.Element {
-  const [IsAffixed, setIsAffixed] = useState(false);
-  const [IsReveal, setIsReveal] = useState(false);
-  const [IsActiveId, setIsActiveId] = useState<string>(LINKS[0].id);
-  const [IsheaderH, setIsHeaderH] = useState(0);
-  const [IsMenuOpen, setIsMenuOpen] = useState(false);
+  const { i18n } = useDocusaurusContext();
+  const isGerman = i18n.currentLocale === 'de';
+
+  const LINKS: NavLink[] = useMemo(
+    () => [
+      { id: 'hero', label: isGerman ? 'Über mich' : 'About me' },
+      { id: 'my-skills', label: isGerman ? 'Meine Skills' : 'My skills' },
+      { id: 'project-highlights', label: isGerman ? 'Meine Projekte' : 'My projects' },
+      { id: 'contact', label: isGerman ? 'Kontakt' : 'Contact' },
+      { url: '/docs', label: isGerman ? 'Doku' : 'Docs', external: true },
+    ],
+    [isGerman]
+  );
+
+  const SECTION_LINKS: SectionLink[] = useMemo(
+    () => LINKS.filter((l): l is SectionLink => 'id' in l),
+    [LINKS]
+  );
+
+  const [isAffixed, setIsAffixed] = useState(false);
+  const [isReveal, setIsReveal] = useState(false);
+  const [isActiveId, setIsActiveId] = useState<string>(SECTION_LINKS[0]?.id ?? 'hero');
+  const [isHeaderH, setIsHeaderH] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const el = useRef<HTMLElement>(null);
   const lastY = useRef(0);
@@ -26,21 +51,17 @@ export default function Header(): JSX.Element {
   const downPeak = useRef(0);
   const upValley = useRef(0);
 
-  // cache section offsets for precise active detection
   const sections = useRef<{ id: string; top: number }[]>([]);
 
   const refreshMeasurements = () => {
-    // header height
     setIsHeaderH(el.current ? el.current.getBoundingClientRect().height : 0);
 
-    // section tops in document coordinates
-    sections.current = LINKS.map(l => {
+    sections.current = SECTION_LINKS.map((l) => {
       const n = document.getElementById(l.id);
       return n
         ? { id: l.id, top: n.getBoundingClientRect().top + window.scrollY }
         : null;
-    })
-      .filter(Boolean) as { id: string; top: number }[];
+    }).filter(Boolean) as { id: string; top: number }[];
 
     sections.current.sort((a, b) => a.top - b.top);
   };
@@ -48,25 +69,30 @@ export default function Header(): JSX.Element {
   const setActiveFromScroll = (y: number) => {
     if (!sections.current.length) return;
 
-    // bottom-of-page guarantee last section
     const docH = document.documentElement.scrollHeight;
     const vh = window.innerHeight;
+
     if (y + vh >= docH - 2) {
       setIsActiveId(sections.current[sections.current.length - 1].id);
       return;
     }
 
-    // line just under fixed header
-    const line = y + IsheaderH + 8;
+    const line = y + isHeaderH + 8;
 
-    // binary search for greatest top <= line
-    let lo = 0, hi = sections.current.length - 1, ans = 0;
+    let lo = 0;
+    let hi = sections.current.length - 1;
+    let ans = 0;
+
     while (lo <= hi) {
       const mid = (lo + hi) >> 1;
       if (sections.current[mid].top <= line) {
-        ans = mid; lo = mid + 1;
-      } else hi = mid - 1;
+        ans = mid;
+        lo = mid + 1;
+      } else {
+        hi = mid - 1;
+      }
     }
+
     setIsActiveId(sections.current[ans].id);
   };
 
@@ -75,7 +101,6 @@ export default function Header(): JSX.Element {
 
     const onResize = () => {
       refreshMeasurements();
-      // also recompute active on resize
       setActiveFromScroll(window.scrollY);
     };
 
@@ -86,8 +111,8 @@ export default function Header(): JSX.Element {
       const y = window.scrollY;
       const goingUp = y < lastY.current;
 
-      // affix threshold
       const nowAffixed = y > REVEAL_AT;
+
       if (!nowAffixed) {
         setIsAffixed(false);
         setIsReveal(false);
@@ -98,9 +123,9 @@ export default function Header(): JSX.Element {
         setActiveFromScroll(y);
         return;
       }
+
       setIsAffixed(true);
 
-      // hysteresis for reveal/hide to avoid flicker
       if (dir.current === null) {
         dir.current = goingUp ? 'up' : 'down';
         downPeak.current = y;
@@ -112,20 +137,22 @@ export default function Header(): JSX.Element {
           dir.current = 'up';
           upValley.current = y;
         }
-        if (!IsReveal && downPeak.current - y >= SHOW_DELTA) {
+
+        if (!isReveal && downPeak.current - y >= SHOW_DELTA) {
           setIsReveal(true);
         }
-        // track valley
+
         if (y < upValley.current) upValley.current = y;
       } else {
         if (dir.current !== 'down') {
           dir.current = 'down';
           downPeak.current = y;
         }
-        if (IsReveal && y - upValley.current >= HIDE_DELTA) {
+
+        if (isReveal && y - upValley.current >= HIDE_DELTA) {
           setIsReveal(false);
         }
-        // track peak
+
         if (y > downPeak.current) downPeak.current = y;
       }
 
@@ -134,7 +161,6 @@ export default function Header(): JSX.Element {
     };
 
     window.addEventListener('scroll', onScroll, { passive: true });
-    // initial compute
     onScroll();
 
     return () => {
@@ -142,51 +168,50 @@ export default function Header(): JSX.Element {
       window.removeEventListener('load', refreshMeasurements);
       window.removeEventListener('scroll', onScroll);
     };
-  }, [IsheaderH, IsReveal]);
+  }, [SECTION_LINKS, isHeaderH, isReveal]);
 
   const smoothTo = (id: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const target = document.getElementById(id);
     if (!target) return;
-    const top = target.getBoundingClientRect().top + window.scrollY - (IsAffixed ? IsheaderH : 0);
+
+    const top =
+      target.getBoundingClientRect().top +
+      window.scrollY -
+      (isAffixed ? isHeaderH : 0);
+
     window.scrollTo({ top, behavior: 'smooth' });
     setIsMenuOpen(false);
   };
 
   return (
     <>
-      {IsAffixed ? <div style={{ height: IsheaderH }} /> : null}
+      {isAffixed ? <div style={{ height: isHeaderH }} /> : null}
 
       <header
         ref={el}
         className={[
           styles.header,
-          IsAffixed ? styles.affixed : '',
-          IsAffixed && IsReveal ? styles.reveal : '',
+          isAffixed ? styles.affixed : '',
+          isAffixed && isReveal ? styles.reveal : '',
         ].join(' ')}
       >
         <div className={styles.inner}>
-          {/* desktop nav */}
           <nav className={styles.menu} aria-label="Primary">
             <ul className={styles.navList}>
               {LINKS.map((l) => (
-                <li key={l.label}>
-                  {l.id ? (
-                    // scroll to in-page section
+                <li key={'id' in l ? l.id : l.url}>
+                  {'id' in l ? (
                     <a
                       href={`#${l.id}`}
                       onClick={smoothTo(l.id)}
-                      className={`${styles.link} ${IsActiveId === l.id ? styles.activeLink : ''}`}
-                      aria-current={IsActiveId === l.id ? 'page' : undefined}
+                      className={`${styles.link} ${isActiveId === l.id ? styles.activeLink : ''}`}
+                      aria-current={isActiveId === l.id ? 'page' : undefined}
                     >
                       {l.label}
                     </a>
                   ) : (
-                    // normal link (Docs)
-                    <a
-                      href={l.url}
-                      className={styles.link}
-                    >
+                    <a href={l.url} className={styles.link}>
                       {l.label}
                     </a>
                   )}
@@ -195,39 +220,54 @@ export default function Header(): JSX.Element {
             </ul>
           </nav>
 
-          {/* mobile toggle */}
           <button
             className={styles.menuToggle}
-            aria-expanded={IsMenuOpen}
+            aria-expanded={isMenuOpen}
             aria-controls="mobileMenu"
-            aria-label="Open menu"
+            aria-label={isGerman ? 'Menü öffnen' : 'Open menu'}
             onClick={() => setIsMenuOpen(true)}
           >
-            <span /><span /><span />
+            <span />
+            <span />
+            <span />
           </button>
 
-          {/* desktop languages */}
           <div className={`${styles.lang} ${styles.langBar}`}>
-            <button type="button" className={`${styles.langBtn} ${styles.langActive}`}>EN</button>
-            {/* <button type="button" className={styles.langBtn}>DE</button> */}
+            <a
+              href="/"
+              className={`${styles.langBtn} ${!isGerman ? styles.langActive : ''}`}
+            >
+              EN
+            </a>
+            <a
+              href="/de/"
+              className={`${styles.langBtn} ${isGerman ? styles.langActive : ''}`}
+            >
+              DE
+            </a>
           </div>
         </div>
       </header>
 
-      {/* mobile overlay */}
       <nav
         id="mobileMenu"
         className={styles.mobileMenu}
-        data-open={IsMenuOpen || undefined}
-        aria-hidden={!IsMenuOpen}
+        data-open={isMenuOpen || undefined}
+        aria-hidden={!isMenuOpen}
       >
         <div className={styles.mobileMenuInner}>
-          <button className={styles.closeBtn} onClick={() => setIsMenuOpen(false)} aria-label="Close">×</button>
+          <button
+            className={styles.closeBtn}
+            onClick={() => setIsMenuOpen(false)}
+            aria-label={isGerman ? 'Schließen' : 'Close'}
+          >
+            ×
+          </button>
 
           <ul className={styles.menuStack} role="menu">
             {LINKS.map((l) => (
-              <li key={l.id ?? l.url}>
-                {l.id ? (
+              <li key={'id' in l ? l.id : l.url}>
+                {'id' in l ? (
                   <a
                     className={styles.menuLink}
                     role="menuitem"
@@ -241,7 +281,7 @@ export default function Header(): JSX.Element {
                     className={styles.menuLink}
                     role="menuitem"
                     href={l.url}
-                    onClick={() => setIsMenuOpen(false)} // close mobile menu after click
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     {l.label}
                   </a>
@@ -251,8 +291,18 @@ export default function Header(): JSX.Element {
           </ul>
 
           <div className={`${styles.lang} ${styles.langMenu}`}>
-            <button type="button" className={`${styles.langBtnMobile} ${styles.langActiveMobile}`}>EN</button>
-            {/* <button type="button" className={styles.langBtnMobile}>DE</button> */}
+            <a
+              href="/"
+              className={`${styles.langBtnMobile} ${!isGerman ? styles.langActiveMobile : ''}`}
+            >
+              EN
+            </a>
+            <a
+              href="/de/"
+              className={`${styles.langBtnMobile} ${isGerman ? styles.langActiveMobile : ''}`}
+            >
+              DE
+            </a>
           </div>
         </div>
       </nav>

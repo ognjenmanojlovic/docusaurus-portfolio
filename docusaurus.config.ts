@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Ognjen Manojlovic',
   tagline:
-    'DevSecOps & Cyber Security Portfolio | Docker • CI/CD • Secure Deployments | Future Cyber Security Engineer',
+    'DevSecOps & Cyber Security Portfolio | Docker • CI/CD • Secure Deployments | Cyber Security Engineer',
   favicon: 'img/portfolio.png',
 
   future: {
@@ -19,7 +19,12 @@ const config: Config = {
   projectName: 'docusaurus-portfolio',
 
   onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'ignore',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'ignore',
+    },
+  },
 
   i18n: {
     defaultLocale: 'en',
@@ -46,7 +51,12 @@ const config: Config = {
     image: 'img/portfolio.png',
     navbar: {
       hideOnScroll: true,
-      items: [],
+      items: [
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+      ],
     },
     footer: undefined,
     colorMode: {
