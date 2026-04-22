@@ -197,11 +197,11 @@ export default function ProjectHighlights(): JSX.Element {
                 { icon: './icons/python.svg', label: 'Python' },
               ],
               description:
-                `Password Cracking Expert ist ein praxisorientiertes Security-Projekt, das Hashcat-Labs mit eigenen Python-basierten Tools kombiniert.\n
+                `Password Cracking ist ein praxisorientiertes Security-Projekt, das Hashcat-Labs mit eigenen Python-basierten Tools kombiniert.\n
        Ich habe verschiedene Angriffsmethoden, Datei-Cracking-Techniken und unterstützende Skripte dokumentiert, die in kontrollierten Umgebungen für Passwort-Audits und Recovery-Aufgaben eingesetzt werden.\n
        Das Projekt hat mein Verständnis für Authentifizierungsschwächen, Angriffsabläufe und die Rolle von Automatisierung im Security Testing vertieft.`,
               docUrl: '/docs/password-cracking',
-              githubUrl: 'https://github.com/ognjenmanojlovic/password-cracking-expert',
+              githubUrl: 'https://github.com/ognjenmanojlovic/docusaurus-portfolio/tree/main/docs/password-cracking',
             },
             {
               id: 'minecraft',
@@ -268,7 +268,7 @@ export default function ProjectHighlights(): JSX.Element {
        Ich habe es genutzt, um mein Verständnis für Netzwerk-Enumeration, Host-Analyse und den Einsatz kleiner Automatisierungstools in Security-Testing-Workflows zu stärken.\n
        Das Projekt zeigt mein Interesse an praxisnahen Python-basierten Tools für Cyber-Security-Aufgaben und technische Infrastruktur-Analysen.`,
               docUrl: '/docs/python-security-tools/port-scanner',
-              githubUrl: 'https://github.com/ognjenmanojlovic/python-security-tools',
+              githubUrl: 'https://github.com/ognjenmanojlovic/docusaurus-portfolio/tree/main/docs/python-security-tools/port-scanner',
             },
           ]
         : [
@@ -331,11 +331,11 @@ export default function ProjectHighlights(): JSX.Element {
                 { icon: './icons/python.svg', label: 'Python' },
               ],
               description:
-                `Password Cracking Expert is a practical security project that combines Hashcat labs with custom Python-based tooling.\n
+                `Password Cracking is a practical security project that combines Hashcat labs with custom Python-based tooling.\n
        I documented different attack methods, file cracking techniques, and supporting scripts used for password auditing and recovery tasks in controlled environments.\n
        The project strengthened my understanding of authentication weaknesses, attack workflows, and the role of automation in security testing.`,
               docUrl: '/docs/password-cracking',
-              githubUrl: 'https://github.com/ognjenmanojlovic/password-cracking-expert',
+              githubUrl: 'https://github.com/ognjenmanojlovic/docusaurus-portfolio/tree/main/docs/password-cracking',
             },
             {
               id: 'minecraft',
@@ -402,7 +402,7 @@ export default function ProjectHighlights(): JSX.Element {
        I used it to strengthen my understanding of network enumeration, host analysis, and how small automation tools support security testing workflows.\n
        The project reflects my interest in practical Python-based tooling for cyber security tasks and technical infrastructure analysis.`,
               docUrl: '/docs/python-security-tools/port-scanner',
-              githubUrl: 'https://github.com/ognjenmanojlovic/python-security-tools',
+              githubUrl: 'https://github.com/ognjenmanojlovic/docusaurus-portfolio/tree/main/docs/python-security-tools/port-scanner',
             },
           ],
     [isGerman]
