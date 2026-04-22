@@ -6,7 +6,7 @@ const config: Config = {
   title: 'Ognjen Manojlovic',
   tagline:
     'DevSecOps & Cyber Security Portfolio | Docker • CI/CD • Secure Deployments | Cyber Security Engineer',
-  favicon: 'img/portfolio.png',
+  favicon: 'img/favicon.png',
 
   future: {
     v4: true,
