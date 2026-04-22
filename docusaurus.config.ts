@@ -12,7 +12,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'http://localhost:3001',
+  url: 'https://ognjenmanojlovic.com',
   baseUrl: '/',
 
   organizationName: 'ognjenmanojlovic',
@@ -50,8 +50,19 @@ const config: Config = {
   themeConfig: {
     image: 'img/portfolio.png',
     navbar: {
+      title: 'Ognjen Manojlovic',
       hideOnScroll: true,
       items: [
+        {
+          to: '/',
+          label: 'Home',
+          position: 'left',
+        },
+        {
+          to: '/docs',
+          label: 'Docs',
+          position: 'left',
+        },
         {
           type: 'localeDropdown',
           position: 'right',
