@@ -85,7 +85,7 @@ export default function Hero(): JSX.Element {
           <div className={styles.picMobile}>
             <img
               className={styles.photo}
-              src="./img/Ognjen_Manojlovic_Picture.png"
+              src="./img/Manojlovic_Picture.png"
               alt="Portrait"
             />
           </div>
@@ -100,7 +100,7 @@ export default function Hero(): JSX.Element {
         <div className={`${styles.picCol} ${styles.picDesktop}`}>
           <img
             className={styles.photo}
-            src="./img/Ognjen_Manojlovic_Picture.png"
+            src="./img/Manojlovic_Picture.png"
             alt="Portrait"
           />
         </div>
