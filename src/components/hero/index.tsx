@@ -20,17 +20,17 @@ export default function Hero(): JSX.Element {
 
   const blurb = isGerman ? (
     <>
-      Ich bin 22 Jahre alt und Absolvent der HTL Anichstraße in Innsbruck im Zweig Wirtschaftsingenieurwesen mit Schwerpunkt Informatik. Bereits früh konnte ich wertvolle Praxiserfahrung als IT-Systemadministrator und im Second-Level-Support sammeln, wodurch ich ein starkes Fundament in Infrastruktur, Systembetrieb und technischem Problemlösen aufgebaut habe.
+      Ich entwickle sichere und zuverlässige IT-Systeme, die Unternehmen vom täglichen Betrieb bis hin zu produktionsreifen Umgebungen unterstützen. Mein Hintergrund umfasst Systemadministration, Second-Level-Support, Infrastruktur und IT-Sicherheit mit Fokus auf stabile, geschützte und effizient betriebene Systeme.
       <br />
       <br />
-      Heute liegt mein Fokus auf Cyber Security und DevSecOps. Ich arbeite praxisnah mit Containerisierung, CI/CD-Pipelines, Automatisierung und sicheren Deployments, um moderne, stabile und zukunftssichere IT-Systeme zu entwickeln.
+      Durch praxisnahes DevSecOps-Training arbeite ich mit Containerisierung, CI/CD-Pipelines, Automatisierung, System-Hardening und sicheren Deployments. Gestützt auf mein technisches Fundament aus der HTL Anichstraße in Innsbruck, praktische Erfahrung und den kontinuierlichen Antrieb, mich im Bereich Cyber Security weiterzuentwickeln, konzentriere ich mich darauf, Systeme zu schaffen, die heute belastbar und für morgen vorbereitet sind.
     </>
   ) : (
     <>
-      I am 22 years old and a graduate of HTL Anichstraße in Innsbruck in the industrial engineering program with a specialization in computer science. Early in my career, I gained valuable hands-on experience as an IT System Administrator and in Second-Level Support, building a strong foundation in infrastructure, operations, and technical problem solving.
+      I build secure and reliable IT systems that support businesses from daily operations to production-ready environments. My background includes system administration, second-level support, infrastructure and IT security with a focus on stable, protected and efficiently operated systems.
       <br />
       <br />
-      Today, my main focus is Cyber Security and DevSecOps. I work hands-on with containerization, CI/CD pipelines, automation, and secure deployments to build modern, stable, and future-ready IT systems.
+      Through hands-on DevSecOps training, I work with containerization, CI/CD pipelines, automation, system hardening and secure deployments. Backed by my technical foundation from HTL Anichstraße from Innsbruck, real-world experience and a continuous drive to grow in cyber security, I focus on creating systems that are resilient today and prepared for tomorrow.
     </>
   );
 
