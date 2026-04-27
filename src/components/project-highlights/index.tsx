@@ -152,7 +152,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `Conduit Container ist mein Ansatz, Full-Stack-Anwendungen sicher und zuverlässig bereitzustellen.\n
       Frontend und Backend laufen als Docker-Services und werden von einer CI/CD-Pipeline unterstützt, die Builds, Releases und Deployments übernimmt.\n
       Das Ergebnis sind weniger manuelle Schritte, ein geringeres Fehlerrisiko und schnellere Auslieferung – ganz im Sinne meines DevSecOps-Mindsets aus Automatisierung und Stabilität.`,
-              docUrl: '/docs/conduit-container',
+              docUrl: '/docs/projects/conduit-container',
               githubUrl: 'https://github.com/ognjenmanojlovic/conduit-container',
             },
             {
@@ -168,7 +168,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `Ein Django-basierter Shop, der als containerisierter Service mit einem eigenen Dockerfile umgesetzt wurde, um Python-Umgebung und Abhängigkeiten sauber zu steuern.\n
        Das Setup lässt sich konsistent starten, warten und aktualisieren, was Deployments über verschiedene Umgebungen hinweg einfach und zuverlässig macht.\n
        Dieses Projekt gab mir wertvolle Praxiserfahrung darin, Webanwendungen in stabile und produktionsreife Container-Services zu überführen.`,
-              docUrl: '/docs/baby-tools-shop',
+              docUrl: '/docs/projects/baby-tools-shop',
               githubUrl: 'https://github.com/ognjenmanojlovic/baby-tools-shop',
             },
             {
@@ -184,7 +184,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `Juice Shop Meister ist ein praxisnahes Security-Projekt, das sich auf die Analyse und Ausnutzung von Schwachstellen in OWASP Juice Shop konzentriert.\n
        Ich habe detaillierte Dokumentationen und Video-Walkthroughs erstellt, die zeigen, wie Angriffe durchgeführt werden, wie man sie verhindert und warum sie relevant sind.\n
        Das Projekt hat meine praktischen Penetration-Testing-Skills, mein Sicherheitsbewusstsein und meine Fähigkeit gestärkt, komplexe Risiken klar und strukturiert zu vermitteln.`,
-              docUrl: '/docs/juice-shop-master',
+              docUrl: '/docs/projects/juice-shop-master',
               githubUrl: 'https://github.com/ognjenmanojlovic/juice-shop-meister',
             },
             {
@@ -200,7 +200,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `Password Cracking ist ein praxisorientiertes Security-Projekt, das Hashcat-Labs mit eigenen Python-basierten Tools kombiniert.\n
        Ich habe verschiedene Angriffsmethoden, Datei-Cracking-Techniken und unterstützende Skripte dokumentiert, die in kontrollierten Umgebungen für Passwort-Audits und Recovery-Aufgaben eingesetzt werden.\n
        Das Projekt hat mein Verständnis für Authentifizierungsschwächen, Angriffsabläufe und die Rolle von Automatisierung im Security Testing vertieft.`,
-              docUrl: '/docs/password-cracking',
+              docUrl: '/docs/projects/password-cracking',
               githubUrl: 'https://github.com/ognjenmanojlovic/docusaurus-portfolio/tree/main/docs/password-cracking',
             },
             {
@@ -217,7 +217,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `Das Minecraft-Server-Projekt ist eine containerisierte Lösung für den Betrieb eines zuverlässigen Game-Servers mit persistenter Speicherung für Welt-Daten, Einstellungen und Logs.\n
        Es ermöglicht Neustarts und Updates ohne Fortschrittsverlust, während zentrale Konfigurationswerte über Environment-Variablen einfach verwaltet werden.\n
        Das Projekt zeigt meine Fähigkeit, praktische, stabile und wartungsfreundliche Services mit modernen Docker-Workflows umzusetzen.`,
-              docUrl: '/docs/minecraft-server',
+              docUrl: '/docs/projects/minecraft-server',
               githubUrl: 'https://github.com/ognjenmanojlovic/minecraft-server',
             },
             {
@@ -234,7 +234,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `Ein schlankes Docker-Compose-Setup für WordPress und MySQL mit offiziellen Container-Images.\n
        Persistente Volumes schützen Daten über Neustarts hinweg, während umgebungsbasierte Konfiguration sensible Werte aus dem Repository fernhält und ein zuverlässiges Startverhalten sicherstellt.\n
        Dieses Projekt war mein Ansatz, einen klassischen CMS-Stack in eine saubere, stabile und produktionsreife Container-Lösung zu verwandeln.`,
-              docUrl: '/docs/wordpress-docker',
+              docUrl: '/docs/projects/wordpress-docker',
               githubUrl: 'https://github.com/ognjenmanojlovic/wordpress-docker',
             },
             {
@@ -251,7 +251,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `Ein Dockerisierter Django-E-Commerce-Backend-Service mit PostgreSQL für zuverlässiges Datenmanagement.\n
        Die Services laufen in einem dedizierten Container-Netzwerk, während Environment-Variablen Konfiguration und sensible Einstellungen sicher verwalten. Admin-Zugang und Produktmanagement sind von Anfang an integriert.\n
        Dieses Projekt spiegelt meinen Fokus wider, Backend-Systeme zu bauen, die sicher, strukturiert und praxisnah einsetzbar sind.`,
-              docUrl: '/docs/truck-signs-api',
+              docUrl: '/docs/projects/truck-signs-api',
               githubUrl: 'https://github.com/ognjenmanojlovic/truck_signs_api',
             },
             {
@@ -267,7 +267,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `Port Scanner ist ein Python-Security-Tool, das offene Ports überprüft und die Sichtbarkeit exponierter Netzwerkdienste verbessert.\n
        Ich habe es genutzt, um mein Verständnis für Netzwerk-Enumeration, Host-Analyse und den Einsatz kleiner Automatisierungstools in Security-Testing-Workflows zu stärken.\n
        Das Projekt zeigt mein Interesse an praxisnahen Python-basierten Tools für Cyber-Security-Aufgaben und technische Infrastruktur-Analysen.`,
-              docUrl: '/docs/python-security-tools/port-scanner',
+              docUrl: '/docs/projects/python-security-tools/port-scanner',
               githubUrl: 'https://github.com/ognjenmanojlovic/docusaurus-portfolio/tree/main/docs/python-security-tools/port-scanner',
             },
           ]
@@ -286,7 +286,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `Conduit Container is my approach to deploying full-stack applications in a secure and reliable way.\n
       Both frontend and backend run as Docker services, supported by a CI/CD pipeline that manages builds, releases, and deployments.\n
       The result is fewer manual tasks, lower risk of errors, and faster delivery, reflecting my DevSecOps mindset of combining automation with stability.`,
-              docUrl: '/docs/conduit-container',
+              docUrl: '/docs/projects/conduit-container',
               githubUrl: 'https://github.com/ognjenmanojlovic/conduit-container',
             },
             {
@@ -302,7 +302,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `A Django-based shop packaged as a containerized service with a custom Dockerfile to manage the Python environment and dependencies.\n
        The setup can be started, maintained, and updated consistently across different environments, making deployments simple and reliable.\n
        This project gave me valuable hands-on experience in turning web applications into stable and production-ready containerized services.`,
-              docUrl: '/docs/baby-tools-shop',
+              docUrl: '/docs/projects/baby-tools-shop',
               githubUrl: 'https://github.com/ognjenmanojlovic/baby-tools-shop',
             },
             {
@@ -318,7 +318,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `Juice Shop Meister is a hands-on security project focused on analyzing and exploiting vulnerabilities in OWASP Juice Shop.\n
        I created detailed documentation and video walkthroughs that showed how attacks were performed, how they can be prevented, and why they matter.\n
        The project strengthened my practical penetration testing skills, security awareness, and ability to explain complex risks in a clear and structured way.`,
-              docUrl: '/docs/juice-shop-master',
+              docUrl: '/docs/projects/juice-shop-master',
               githubUrl: 'https://github.com/ognjenmanojlovic/juice-shop-meister',
             },
             {
@@ -334,7 +334,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `Password Cracking is a practical security project that combines Hashcat labs with custom Python-based tooling.\n
        I documented different attack methods, file cracking techniques, and supporting scripts used for password auditing and recovery tasks in controlled environments.\n
        The project strengthened my understanding of authentication weaknesses, attack workflows, and the role of automation in security testing.`,
-              docUrl: '/docs/password-cracking',
+              docUrl: '/docs/projects/password-cracking',
               githubUrl: 'https://github.com/ognjenmanojlovic/docusaurus-portfolio/tree/main/docs/password-cracking',
             },
             {
@@ -351,7 +351,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `The Minecraft Server project is a containerized solution for running a reliable game server with persistent storage for world data, settings, and logs.\n
        It allows restarts and updates without losing progress, while key configuration values are handled through environment variables for simple management.\n
        The project highlights my ability to build practical, stable, and easy-to-maintain services using modern Docker workflows.`,
-              docUrl: '/docs/minecraft-server',
+              docUrl: '/docs/projects/minecraft-server',
               githubUrl: 'https://github.com/ognjenmanojlovic/minecraft-server',
             },
             {
@@ -368,7 +368,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `A streamlined Docker Compose setup for WordPress and MySQL using official container images.\n
        Persistent volumes protect data across restarts, while environment-based configuration keeps sensitive values out of source control and ensures reliable startup behavior.\n
        This project was my approach to transforming a traditional CMS stack into a clean, stable, and production-ready containerized solution.`,
-              docUrl: '/docs/wordpress-docker',
+              docUrl: '/docs/projects/wordpress-docker',
               githubUrl: 'https://github.com/ognjenmanojlovic/wordpress-docker',
             },
             {
@@ -385,7 +385,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `A Dockerized Django e-commerce backend powered by PostgreSQL for reliable data management.\n
        The services run on a dedicated container network, while environment variables are used to handle configuration and sensitive settings securely. Admin access and product management are included from the start.\n
        This project reflects my focus on building backend systems that are secure, organized, and ready for practical deployment.`,
-              docUrl: '/docs/truck-signs-api',
+              docUrl: '/docs/projects/truck-signs-api',
               githubUrl: 'https://github.com/ognjenmanojlovic/truck_signs_api',
             },
             {
@@ -401,7 +401,7 @@ export default function ProjectHighlights(): JSX.Element {
                 `Port Scanner is a Python security tool built to inspect open ports and improve visibility into exposed network services.\n
        I used it to strengthen my understanding of network enumeration, host analysis, and how small automation tools support security testing workflows.\n
        The project reflects my interest in practical Python-based tooling for cyber security tasks and technical infrastructure analysis.`,
-              docUrl: '/docs/python-security-tools/port-scanner',
+              docUrl: '/docs/projects/python-security-tools/port-scanner',
               githubUrl: 'https://github.com/ognjenmanojlovic/docusaurus-portfolio/tree/main/docs/python-security-tools/port-scanner',
             },
           ],
