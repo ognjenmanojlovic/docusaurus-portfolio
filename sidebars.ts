@@ -167,20 +167,55 @@ const sidebars: SidebarsConfig = {
         },
 
         {
-          type: 'category',
-          label: 'Python Security Tools',
-          link: { type: 'doc', id: 'projects/python-security-tools/index' },
-          items: [
-            {
               type: 'category',
-              label: 'Port Scanner',
-              link: {
-                type: 'doc',
-                id: 'projects/python-security-tools/port-scanner/index',
-              },
-              items: ['projects/python-security-tools/port-scanner/source-code'],
-            },
-          ],
+              label: 'Python Security Tools',
+              link: { type: 'doc', id: 'projects/python-security-tools/index' },
+              items: [
+                {
+                  type: 'category',
+                  label: 'File Integrity Checker',
+                  link: {
+                  type: 'doc',
+                  id: 'projects/python-security-tools/file-integrity-checker/index',
+                        },
+              items: [
+                  'projects/python-security-tools/file-integrity-checker/source-code',
+                      ],
+                },
+                {
+                  type: 'category',
+                  label: 'Port Scanner',
+                  link: {
+                    type: 'doc',
+                    id: 'projects/python-security-tools/port-scanner/index',
+                        },
+                    items: [
+                        'projects/python-security-tools/port-scanner/source-code',
+                           ],
+                  },
+                  {
+                  type: 'category',
+                  label: 'Log Analyzer',
+                  link: {
+                    type: 'doc',
+                    id: 'projects/python-security-tools/log-analyzer/index',
+                        },
+                    items: [
+                        'projects/python-security-tools/log-analyzer/source-code',
+                           ],
+                  },
+                      ],
+        },
+        {
+                  type: 'category',
+                  label: 'SIEM Mini Dashboard',
+                  link: {
+                    type: 'doc',
+                    id: 'projects/siem-mini-dashboard/index',
+                        },
+                    items: [
+                        'projects/siem-mini-dashboard/source-code',
+                           ],
         },
 
         'projects/truck-signs-api/index',
