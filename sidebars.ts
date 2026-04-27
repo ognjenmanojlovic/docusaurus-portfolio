@@ -2,28 +2,28 @@ import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
-    'index',
     {
       type: 'category',
       label: 'Projects',
+      link: { type: 'doc', id: 'projects/index' },
       items: [
-        'baby-tools-shop/index',
-        'conduit-container/index',
+        'projects/baby-tools-shop/index',
+        'projects/conduit-container/index',
 
         {
           type: 'category',
           label: 'Document Security Tools',
-          link: { type: 'doc', id: 'document-security-tools/index' },
+          link: { type: 'doc', id: 'projects/document-security-tools/index' },
           items: [
             {
               type: 'category',
               label: 'PDF Metadata Extractor',
               link: {
                 type: 'doc',
-                id: 'document-security-tools/pdf-metadata-extractor/index',
+                id: 'projects/document-security-tools/pdf-metadata-extractor/index',
               },
               items: [
-                'document-security-tools/pdf-metadata-extractor/source-code',
+                'projects/document-security-tools/pdf-metadata-extractor/source-code',
               ],
             },
             {
@@ -31,10 +31,10 @@ const sidebars: SidebarsConfig = {
               label: 'PDF Metadata Cleaner',
               link: {
                 type: 'doc',
-                id: 'document-security-tools/pdf-metadata-cleaner/index',
+                id: 'projects/document-security-tools/pdf-metadata-cleaner/index',
               },
               items: [
-                'document-security-tools/pdf-metadata-cleaner/source-code',
+                'projects/document-security-tools/pdf-metadata-cleaner/source-code',
               ],
             },
           ],
@@ -43,72 +43,72 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Juice Shop Master',
-          link: { type: 'doc', id: 'juice-shop-master/index' },
+          link: { type: 'doc', id: 'projects/juice-shop-master/index' },
           items: [
-            'juice-shop-master/forged-review',
-            'juice-shop-master/poison-null-byte',
-            'juice-shop-master/user-credentials',
-            'juice-shop-master/change-benders-password',
+            'projects/juice-shop-master/forged-review',
+            'projects/juice-shop-master/poison-null-byte',
+            'projects/juice-shop-master/user-credentials',
+            'projects/juice-shop-master/change-benders-password',
           ],
         },
 
         {
           type: 'category',
           label: 'Juice Shop Practice',
-          link: { type: 'doc', id: 'juice-shop-practice/index' },
+          link: { type: 'doc', id: 'projects/juice-shop-practice/index' },
           items: [
             {
               type: 'category',
               label: '⭐ One-Star Challenges',
               items: [
-                'juice-shop-practice/one-star-challenges/bonus-payload',
-                'juice-shop-practice/one-star-challenges/bully-chatbot',
-                'juice-shop-practice/one-star-challenges/exposed-metrics',
-                'juice-shop-practice/one-star-challenges/missing-encoding',
-                'juice-shop-practice/one-star-challenges/outdated-allowlist',
-                'juice-shop-practice/one-star-challenges/zero-stars',
+                'projects/juice-shop-practice/one-star-challenges/bonus-payload',
+                'projects/juice-shop-practice/one-star-challenges/bully-chatbot',
+                'projects/juice-shop-practice/one-star-challenges/exposed-metrics',
+                'projects/juice-shop-practice/one-star-challenges/missing-encoding',
+                'projects/juice-shop-practice/one-star-challenges/outdated-allowlist',
+                'projects/juice-shop-practice/one-star-challenges/zero-stars',
               ],
             },
             {
               type: 'category',
               label: '⭐⭐ Two-Star Challenges',
               items: [
-                'juice-shop-practice/two-star-challenges/admin-section',
-                'juice-shop-practice/two-star-challenges/deprecated-interface',
-                'juice-shop-practice/two-star-challenges/empty-user-registration',
-                'juice-shop-practice/two-star-challenges/five-star-feedback',
-                'juice-shop-practice/two-star-challenges/login-admin',
-                'juice-shop-practice/two-star-challenges/meta-geo-stalking',
-                'juice-shop-practice/two-star-challenges/password-strength',
+                'projects/juice-shop-practice/two-star-challenges/admin-section',
+                'projects/juice-shop-practice/two-star-challenges/deprecated-interface',
+                'projects/juice-shop-practice/two-star-challenges/empty-user-registration',
+                'projects/juice-shop-practice/two-star-challenges/five-star-feedback',
+                'projects/juice-shop-practice/two-star-challenges/login-admin',
+                'projects/juice-shop-practice/two-star-challenges/meta-geo-stalking',
+                'projects/juice-shop-practice/two-star-challenges/password-strength',
               ],
             },
             {
               type: 'category',
               label: '⭐⭐⭐ Three-Star Challenges',
               items: [
-                'juice-shop-practice/three-star-challenges/admin-registration',
-                'juice-shop-practice/three-star-challenges/bjoerns-favourite-pet',
-                'juice-shop-practice/three-star-challenges/captcha-bypass',
-                'juice-shop-practice/three-star-challenges/deluxe-fraud',
-                'juice-shop-practice/three-star-challenges/forged-feedback',
+                'projects/juice-shop-practice/three-star-challenges/admin-registration',
+                'projects/juice-shop-practice/three-star-challenges/bjoerns-favourite-pet',
+                'projects/juice-shop-practice/three-star-challenges/captcha-bypass',
+                'projects/juice-shop-practice/three-star-challenges/deluxe-fraud',
+                'projects/juice-shop-practice/three-star-challenges/forged-feedback',
               ],
             },
           ],
         },
 
-        'minecraft-server/index',
+        'projects/minecraft-server/index',
 
         {
           type: 'category',
           label: 'Password Cracking',
-          link: { type: 'doc', id: 'password-cracking/index' },
+          link: { type: 'doc', id: 'projects/password-cracking/index' },
           items: [
             {
               type: 'category',
               label: 'Custom Python Password Tools',
               link: {
                 type: 'doc',
-                id: 'password-cracking/custom-python-password-tools/index',
+                id: 'projects/password-cracking/custom-python-password-tools/index',
               },
               items: [
                 {
@@ -116,10 +116,10 @@ const sidebars: SidebarsConfig = {
                   label: 'Python Dictionary Attack',
                   link: {
                     type: 'doc',
-                    id: 'password-cracking/custom-python-password-tools/python-dictionary-attack/index',
+                    id: 'projects/password-cracking/custom-python-password-tools/python-dictionary-attack/index',
                   },
                   items: [
-                    'password-cracking/custom-python-password-tools/python-dictionary-attack/source-code',
+                    'projects/password-cracking/custom-python-password-tools/python-dictionary-attack/source-code',
                   ],
                 },
                 {
@@ -127,10 +127,10 @@ const sidebars: SidebarsConfig = {
                   label: 'Python Mask Attack',
                   link: {
                     type: 'doc',
-                    id: 'password-cracking/custom-python-password-tools/python-mask-attack/index',
+                    id: 'projects/password-cracking/custom-python-password-tools/python-mask-attack/index',
                   },
                   items: [
-                    'password-cracking/custom-python-password-tools/python-mask-attack/source-code',
+                    'projects/password-cracking/custom-python-password-tools/python-mask-attack/source-code',
                   ],
                 },
                 {
@@ -138,10 +138,10 @@ const sidebars: SidebarsConfig = {
                   label: 'SHA512 Potfile Generator',
                   link: {
                     type: 'doc',
-                    id: 'password-cracking/custom-python-password-tools/sha512-potfile-generator/index',
+                    id: 'projects/password-cracking/custom-python-password-tools/sha512-potfile-generator/index',
                   },
                   items: [
-                    'password-cracking/custom-python-password-tools/sha512-potfile-generator/source-code',
+                    'projects/password-cracking/custom-python-password-tools/sha512-potfile-generator/source-code',
                   ],
                 },
               ],
@@ -149,15 +149,18 @@ const sidebars: SidebarsConfig = {
             {
               type: 'category',
               label: 'Hashcat Lab',
-              link: { type: 'doc', id: 'password-cracking/hashcat-lab/index' },
+              link: {
+                type: 'doc',
+                id: 'projects/password-cracking/hashcat-lab/index',
+              },
               items: [
-                'password-cracking/hashcat-lab/brute-force-attack',
-                'password-cracking/hashcat-lab/dictionary-attack',
-                'password-cracking/hashcat-lab/docx-file-cracking',
-                'password-cracking/hashcat-lab/keepass-cve-2023-32784',
-                'password-cracking/hashcat-lab/mask-attack',
-                'password-cracking/hashcat-lab/pptx-file-cracking',
-                'password-cracking/hashcat-lab/zip-archive-cracking',
+                'projects/password-cracking/hashcat-lab/brute-force-attack',
+                'projects/password-cracking/hashcat-lab/dictionary-attack',
+                'projects/password-cracking/hashcat-lab/docx-file-cracking',
+                'projects/password-cracking/hashcat-lab/keepass-cve-2023-32784',
+                'projects/password-cracking/hashcat-lab/mask-attack',
+                'projects/password-cracking/hashcat-lab/pptx-file-cracking',
+                'projects/password-cracking/hashcat-lab/zip-archive-cracking',
               ],
             },
           ],
@@ -166,25 +169,23 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Python Security Tools',
-          link: { type: 'doc', id: 'python-security-tools/index' },
+          link: { type: 'doc', id: 'projects/python-security-tools/index' },
           items: [
             {
               type: 'category',
               label: 'Port Scanner',
               link: {
                 type: 'doc',
-                id: 'python-security-tools/port-scanner/index',
+                id: 'projects/python-security-tools/port-scanner/index',
               },
-              items: [
-                'python-security-tools/port-scanner/source-code',
-              ],
+              items: ['projects/python-security-tools/port-scanner/source-code'],
             },
           ],
         },
 
-        'truck-signs-api/index',
-        'v-server-setup/index',
-        'wordpress-docker/index',
+        'projects/truck-signs-api/index',
+        'projects/v-server-setup/index',
+        'projects/wordpress-docker/index',
       ],
     },
   ],

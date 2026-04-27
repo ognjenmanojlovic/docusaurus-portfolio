@@ -1,9 +1,10 @@
 ---
-slug: /
+title: Projects
+slug: /projects
 sidebar_position: 1
 ---
 
-# Documentation
+# Projects
 
 Welcome to my documentation hub. This section contains the technical documentation for my DevSecOps, cyber security, infrastructure, and containerization projects. Each project includes its own implementation details, setup steps, and practical notes based on the work I completed during training and hands-on practice.
 

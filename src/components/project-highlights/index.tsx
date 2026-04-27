@@ -467,7 +467,7 @@ export default function ProjectHighlights(): JSX.Element {
                 })}
               </div>
 
-              <a href="/docs" className={styles.seeMore} aria-label={seeMoreLabel}>
+              <a href="/docs/projects" className={styles.seeMore} aria-label={seeMoreLabel}>
                 <img
                   src="/icons/see-more-default.svg"
                   alt=""

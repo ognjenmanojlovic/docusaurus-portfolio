@@ -29,7 +29,7 @@ export default function Header(): JSX.Element {
       { id: 'my-skills', label: isGerman ? 'Meine Skills' : 'My skills' },
       { id: 'project-highlights', label: isGerman ? 'Meine Projekte' : 'My projects' },
       { id: 'contact', label: isGerman ? 'Kontakt' : 'Contact' },
-      { url: '/docs', label: isGerman ? 'Doku' : 'Docs', external: true },
+      { url: '/docs/projects', label: isGerman ? 'Doku' : 'Docs' },
     ],
     [isGerman]
   );
