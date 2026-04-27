@@ -1,11 +1,14 @@
 .footer {
   background-color: #262E34;
   color: white;
-  padding: 40px 6vw;
+  padding: 40px 48px;
   text-align: center;
 }
 
 .container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,5 +94,9 @@
   .copy,
   .legal {
     font-size: 14px;
+  }
+
+  .footer {
+  padding: 40px 24px;
   }
 }

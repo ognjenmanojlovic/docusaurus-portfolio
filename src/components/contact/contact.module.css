@@ -1,15 +1,17 @@
 .contact {
   background-color: #262E34;
   color: white;
-  padding: 0 6vw;
+  padding: 0 48px;
   padding-top: 80px;
 }
 
 .container {
+  width: 100%;
+  max-width: 1280px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: clamp(30px, 22vw, 600px);
+  gap: clamp(48px, 12vw, 240px);
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -20,8 +22,8 @@
 }
 
 .right {
-  flex: 1;
-  min-width: 280px;
+  flex: 0 0 420px;
+  max-width: 420px;
   padding-top: 32px;
 }
 
@@ -143,10 +145,10 @@
 
 @media (max-width: 768px) {
   .contact {
-    background-color: #262E34;
-    color: white;
-    padding: 0 6vw;
-    padding-top: 80px;
+  background-color: #262E34;
+  color: white;
+  padding: 0 24px;
+  padding-top: 80px;
   }
 
   .container {
