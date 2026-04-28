@@ -92,7 +92,7 @@ export default function MySkills(): JSX.Element {
               ],
             },
             {
-              icon: './icons/monitoring.svg',
+              icon: './icons/systemadministration.svg',
               label: 'System Administration',
               bullets: [
                 'Benutzer- und Zugriffsverwaltung',
@@ -102,7 +102,7 @@ export default function MySkills(): JSX.Element {
               ],
             },
             {
-              icon: './icons/networking.svg',
+              icon: './icons/network.svg',
               label: 'Networking',
               bullets: [
                 'Netzwerkgrundlagen',
@@ -184,7 +184,7 @@ export default function MySkills(): JSX.Element {
               ],
             },
             {
-              icon: './icons/monitoring.svg',
+              icon: './icons/systemadministration.svg',
               label: 'System Administration',
               bullets: [
                 'User and access management',
@@ -194,7 +194,7 @@ export default function MySkills(): JSX.Element {
               ],
             },
             {
-              icon: './icons/networking.svg',
+              icon: './icons/network.svg',
               label: 'Networking',
               bullets: [
                 'Network fundamentals',

@@ -218,6 +218,7 @@ const sidebars: SidebarsConfig = {
                            ],
         },
 
+        'projects/infrastructure-lab/index',
         'projects/truck-signs-api/index',
         'projects/v-server-setup/index',
         'projects/wordpress-docker/index',
