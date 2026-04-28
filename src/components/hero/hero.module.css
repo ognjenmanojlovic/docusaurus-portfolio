@@ -107,7 +107,9 @@
 .picCol {
   display: flex;
   justify-content: center;
-  padding-top: 3vw;
+  align-items: center;
+  padding-top: 0;
+  transform: translateY(-20px);
 }
 
 .photo {
