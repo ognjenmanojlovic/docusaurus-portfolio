@@ -3,9 +3,9 @@ id: legal-notice
 title: Legal Notice
 ---
 
-**Ognjen Manojlovic** 
-Roseggerstraße 4 
-6020 Innsbruck 
+**Ognjen Manojlovic**  
+Roseggerstraße 4  
+6020 Innsbruck  
 Austria  
 
 Email: [kontakt@ognjenmanojlovic.com](mailto:kontakt@ognjenmanojlovic.com)  
