@@ -3,11 +3,12 @@ id: legal-notice
 title: Legal Notice
 ---
 
-**Ognjen Manojlovic**  
-6020 Innsbruck, 
+**Ognjen Manojlovic** 
+Roseggerstraße 4 
+6020 Innsbruck 
 Austria  
 
-Email: [manojlovic.ognjen03@gmail.com](mailto:manojlovic.ognjen03@gmail.com)  
+Email: [kontakt@ognjenmanojlovic.com](mailto:kontakt@ognjenmanojlovic.com)  
 LinkedIn: [linkedin.com/in/ognjen-manojlovic-299a2b2a0](https://www.linkedin.com/in/ognjen-manojlovic-299a2b2a0)
 
 ## 1. General Information
@@ -41,4 +42,4 @@ Use of this website may also be subject to GitHub’s Terms of Service and Priva
 All information on this website is provided without warranty of completeness, accuracy, or availability.  
 The author is not liable for any damages resulting from the use of the provided information or code examples.
 
-_Last updated: April 2026_
+_Last updated: Mai 2026_

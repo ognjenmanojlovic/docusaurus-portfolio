@@ -56,7 +56,7 @@ export default function Contact(): JSX.Element {
               <li>
                 <a
                   className={styles.row}
-                  href="mailto:manojlovic.ognjen03@gmail.com"
+                  href="mailto:kontakt@ognjenmanojlovic.com"
                   aria-label="Email"
                 >
                   <span className={styles.iconWrap}>
