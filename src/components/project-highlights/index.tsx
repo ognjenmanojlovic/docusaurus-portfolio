@@ -309,7 +309,7 @@ export default function ProjectHighlights(): JSX.Element {
             },
             {
               id: 'soc-siem-lab',
-              name: 'SOC & SIEM Infrastructure Lab',
+              name: 'SOC & SIEM Lab',
               image: './img/projects/soc-siem-lab.png',
               tags: [
                 { icon: './icons/security.svg', label: 'IT Security' },
