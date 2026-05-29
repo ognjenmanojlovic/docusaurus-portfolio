@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Ognjen Manojlovic',
   tagline:
-    'DevSecOps & Cyber Security Portfolio | Docker • CI/CD • Secure Deployments | Cyber Security Engineer',
+    'DevSecOps & Cyber Security Portfolio | Docker • CI/CD • Python • SIEM • Secure Infrastructure',
   favicon: 'img/favicon.png',
 
   future: {

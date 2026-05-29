@@ -139,6 +139,57 @@ export default function ProjectHighlights(): JSX.Element {
       isGerman
         ? [
             {
+              id: 'fastapi-devsecops',
+              name: 'FastAPI DevSecOps',
+              image: './img/projects/screenshots/fastapi-devsecops/FastAPI-DevSecOps-Platform.png',
+              tags: [
+                { icon: './icons/yaml_b.svg', label: 'Yaml' },
+                { icon: './icons/docker_b.svg', label: 'Docker' },
+                { icon: './icons/githubactions_b.svg', label: 'CI/CD' },
+                { icon: './icons/security.svg', label: 'IT Security' },
+              ],
+              description:
+                `FastAPI DevSecOps Platform zeigt, wie eine moderne Full-Stack-Anwendung mit professionellen Security- und CI/CD-Prozessen erweitert wird.\n
+      Das Projekt kombiniert FastAPI, React, Docker und GitHub Actions mit Secret Scanning, SAST, Dependency Scanning, Container Scanning, SBOMs und signierten Docker Images.\n
+      Der Fokus liegt auf sicherer Automatisierung, Container Hardening und Software Supply Chain Security – genau dort, wo moderne DevSecOps-Arbeit in der Praxis beginnt.`,
+              docUrl: '/docs/projects/fastapi-devsecops-platform',
+              githubUrl: 'https://github.com/ognjenmanojlovic/fastapi-devsecops-platform',
+            },
+            {
+              id: 'fastapi-kubernetes',
+              name: 'FastAPI Kubernetes',
+              image: './img/projects/screenshots/fastapi-kubernetes/FastAPI-Kubernetes-Platform.png',
+              tags: [
+                { icon: './icons/yaml_b.svg', label: 'Yaml' },
+                { icon: './icons/docker_b.svg', label: 'Docker' },
+                { icon: './icons/githubactions_b.svg', label: 'CI/CD' },
+                { icon: './icons/security.svg', label: 'IT Security' },
+              ],
+              description:
+                `FastAPI Kubernetes Platform erweitert meine DevSecOps-Anwendung um ein praktisches Kubernetes-Deployment mit k3d, Helm, Traefik Ingress und PostgreSQL.\n
+      Frontend, Backend und Datenbank laufen als getrennte Workloads im Cluster und kommunizieren über Kubernetes Services, ConfigMaps, Secrets und Ingress-Routing.\n
+      Das Projekt zeigt, wie containerisierte Anwendungen reproduzierbar deployed, abgesichert, skaliert und mit grundlegenden Kubernetes-Security-Konzepten betrieben werden können.`,
+              docUrl: '/docs/projects/fastapi-kubernetes-platform',
+              githubUrl: 'https://github.com/ognjenmanojlovic/fastapi-kubernetes-platform',
+            },
+            {
+              id: 'soc-siem-lab',
+              name: 'SOC & SIEM Lab',
+              image: './img/projects/screenshots/soc-lab/SOC-SIEM-Lab.png',
+              tags: [
+                { icon: './icons/security.svg', label: 'IT Security' },
+                { icon: './icons/docker_b.svg', label: 'Docker' },
+                { icon: './icons/shell_b.svg', label: 'Shell' },
+                { icon: './icons/systemadministration.svg', label: 'Sysadmin' },
+              ],
+              description:
+                `SOC & SIEM Infrastructure Lab ist ein praxisnahes Blue-Team-Projekt mit Wazuh SIEM, File Integrity Monitoring, Fail2Ban und einem Cowrie SSH Honeypot.\n
+      In der Lab-Umgebung wurden SSH-Brute-Force-Angriffe, Reconnaissance, Privilege Escalation, Honeypot-Aktivität und Dateiänderungen simuliert und analysiert.\n
+      Das Projekt zeigt meine praktische Erfahrung mit Threat Hunting, Log-Analyse, Detection Engineering, MITRE ATT&CK und Incident-Response-Workflows.`,
+              docUrl: '/docs/projects/soc-siem-infrastructure-lab',
+              githubUrl: 'https://github.com/ognjenmanojlovic/soc-siem-infrastructure-lab',
+            },
+            {
               id: 'conduit',
               name: 'Conduit Container',
               image: './img/projects/conduit.png',
@@ -204,56 +255,6 @@ export default function ProjectHighlights(): JSX.Element {
               githubUrl: 'https://github.com/ognjenmanojlovic/docusaurus-portfolio/tree/main/docs/password-cracking',
             },
             {
-              id: 'siem-dashboard',
-              name: 'SIEM Dashboard',
-              image: './img/projects/screenshots/siem-mini-dashboard/dashboard-overview.png',
-              tags: [
-                { icon: './icons/security.svg', label: 'IT Security' },
-                { icon: './icons/python.svg', label: 'Python' },
-                { icon: './icons/systemadministration.svg', label: 'Sysadmin' },
-              ],
-              description:
-                `SIEM Dashboard ist ein browserbasiertes Security-Dashboard zur Visualisierung von verdächtigen Events aus meinem Python Log Analyzer.\n
-       Das Dashboard zeigt KPIs, Severity-Verteilungen, Event-Typen, auffällige Quell-IP-Adressen, Filter, Tabellen und eine Timeline in einer übersichtlichen SOC-ähnlichen Oberfläche.\n
-       Dieses Projekt verbindet Detection Engineering mit Datenvisualisierung und zeigt, wie strukturierte Log-Analyse-Ergebnisse für Security Monitoring und Incident Investigation nutzbar gemacht werden können.`,
-              docUrl: '/docs/projects/siem-mini-dashboard',
-              githubUrl: 'https://github.com/ognjenmanojlovic/siem-mini-dashboard',
-            },
-            {
-              id: 'minecraft',
-              name: 'Minecraft Server',
-              image: './img/projects/minecraft.png',
-              tags: [
-                { icon: './icons/docker_b.svg', label: 'Docker' },
-                { icon: './icons/yaml_b.svg', label: 'Yaml' },
-                { icon: './icons/shell_b.svg', label: 'Shell' },
-                { icon: './icons/security.svg', label: 'IT Security' },
-              ],
-              description:
-                `Das Minecraft-Server-Projekt ist eine containerisierte Lösung für den Betrieb eines zuverlässigen Game-Servers mit persistenter Speicherung für Welt-Daten, Einstellungen und Logs.\n
-       Es ermöglicht Neustarts und Updates ohne Fortschrittsverlust, während zentrale Konfigurationswerte über Environment-Variablen einfach verwaltet werden.\n
-       Das Projekt zeigt meine Fähigkeit, praktische, stabile und wartungsfreundliche Services mit modernen Docker-Workflows umzusetzen.`,
-              docUrl: '/docs/projects/minecraft-server',
-              githubUrl: 'https://github.com/ognjenmanojlovic/minecraft-server',
-            },
-            {
-              id: 'wordpress',
-              name: 'WordPress',
-              image: './img/projects/wordpress.png',
-              tags: [
-                { icon: './icons/docker_b.svg', label: 'Docker' },
-                { icon: './icons/yaml_b.svg', label: 'Yaml' },
-                { icon: './icons/shell_b.svg', label: 'Shell' },
-                { icon: './icons/security.svg', label: 'IT Security' },
-              ],
-              description:
-                `Ein schlankes Docker-Compose-Setup für WordPress und MySQL mit offiziellen Container-Images.\n
-       Persistente Volumes schützen Daten über Neustarts hinweg, während umgebungsbasierte Konfiguration sensible Werte aus dem Repository fernhält und ein zuverlässiges Startverhalten sicherstellt.\n
-       Dieses Projekt war mein Ansatz, einen klassischen CMS-Stack in eine saubere, stabile und produktionsreife Container-Lösung zu verwandeln.`,
-              docUrl: '/docs/projects/wordpress-docker',
-              githubUrl: 'https://github.com/ognjenmanojlovic/wordpress-docker',
-            },
-            {
               id: 'trucks',
               name: 'Truck Signs API',
               image: './img/projects/trucksigns.png',
@@ -272,6 +273,57 @@ export default function ProjectHighlights(): JSX.Element {
             },
           ]
         : [
+            {
+              id: 'fastapi-devsecops',
+              name: 'FastAPI DevSecOps',
+              image: './img/projects/screenshots/fastapi-devsecops/FastAPI-DevSecOps-Platform.png',
+              tags: [
+                { icon: './icons/yaml_b.svg', label: 'Yaml' },
+                { icon: './icons/docker_b.svg', label: 'Docker' },
+                { icon: './icons/githubactions_b.svg', label: 'CI/CD' },
+                { icon: './icons/security.svg', label: 'IT Security' },
+              ],
+              description:
+                `FastAPI DevSecOps Platform demonstrates how a modern full-stack application can be extended with professional security and CI/CD workflows.\n
+      The project combines FastAPI, React, Docker, and GitHub Actions with secret scanning, SAST, dependency scanning, container scanning, SBOM generation, and signed Docker images.\n
+      It focuses on secure automation, container hardening, and software supply chain security — exactly where modern DevSecOps work becomes practical.`,
+              docUrl: '/docs/projects/fastapi-devsecops-platform',
+              githubUrl: 'https://github.com/ognjenmanojlovic/fastapi-devsecops-platform',
+            },
+            {
+              id: 'fastapi-kubernetes',
+              name: 'FastAPI Kubernetes',
+              image: './img/projects/screenshots/fastapi-kubernetes/FastAPI-Kubernetes-Platform.png',
+              tags: [
+                { icon: './icons/yaml_b.svg', label: 'Yaml' },
+                { icon: './icons/docker_b.svg', label: 'Docker' },
+                { icon: './icons/githubactions_b.svg', label: 'CI/CD' },
+                { icon: './icons/security.svg', label: 'IT Security' },
+              ],
+              description:
+                `FastAPI Kubernetes Platform extends my DevSecOps application with a practical Kubernetes deployment using k3d, Helm, Traefik Ingress, and PostgreSQL.\n
+      Frontend, backend, and database run as separate workloads inside the cluster and communicate through Kubernetes services, ConfigMaps, Secrets, and Ingress routing.\n
+      This project shows how containerized applications can be deployed, secured, scaled, and managed with foundational Kubernetes security concepts.`,
+              docUrl: '/docs/projects/fastapi-kubernetes-platform',
+              githubUrl: 'https://github.com/ognjenmanojlovic/fastapi-kubernetes-platform',
+            },
+            {
+              id: 'soc-siem-lab',
+              name: 'SOC & SIEM Infrastructure Lab',
+              image: './img/projects/soc-siem-lab.png',
+              tags: [
+                { icon: './icons/security.svg', label: 'IT Security' },
+                { icon: './icons/docker_b.svg', label: 'Docker' },
+                { icon: './icons/shell_b.svg', label: 'Shell' },
+                { icon: './icons/systemadministration.svg', label: 'Sysadmin' },
+              ],
+              description:
+                `SOC & SIEM Infrastructure Lab is a hands-on Blue Team project using Wazuh SIEM, File Integrity Monitoring, Fail2Ban, and a Cowrie SSH honeypot.\n
+      The lab simulates and analyzes SSH brute-force attacks, reconnaissance, privilege escalation, honeypot activity, and file integrity events.\n
+      This project demonstrates practical experience in threat hunting, log analysis, detection engineering, MITRE ATT&CK concepts, and incident response workflows.`,
+              docUrl: '/docs/projects/soc-siem-infrastructure-lab',
+              githubUrl: 'https://github.com/ognjenmanojlovic/soc-siem-infrastructure-lab',
+            },
             {
               id: 'conduit',
               name: 'Conduit Container',
@@ -338,56 +390,6 @@ export default function ProjectHighlights(): JSX.Element {
               githubUrl: 'https://github.com/ognjenmanojlovic/docusaurus-portfolio/tree/main/docs/password-cracking',
             },
             {
-              id: 'siem-dashboard',
-              name: 'SIEM Dashboard',
-              image: './img/projects/screenshots/siem-mini-dashboard/dashboard-overview.png',
-              tags: [
-                { icon: './icons/security.svg', label: 'IT Security' },
-                { icon: './icons/python.svg', label: 'Python' },
-                { icon: './icons/systemadministration.svg', label: 'Sysadmin' },
-              ],
-              description:
-                `SIEM Dashboard is a browser-based security dashboard for visualizing suspicious events generated by my Python Log Analyzer.\n
-       It displays KPIs, severity distributions, event types, suspicious source IP addresses, filters, tables, and a timeline in a clean SOC-style interface.\n
-       This project connects detection engineering with data visualization and shows how structured log analysis results can support security monitoring and incident investigation.`,
-              docUrl: '/docs/projects/siem-mini-dashboard',
-              githubUrl: 'https://github.com/ognjenmanojlovic/siem-mini-dashboard',
-            },
-            {
-              id: 'minecraft',
-              name: 'Minecraft Server',
-              image: './img/projects/minecraft.png',
-              tags: [
-                { icon: './icons/docker_b.svg', label: 'Docker' },
-                { icon: './icons/yaml_b.svg', label: 'Yaml' },
-                { icon: './icons/shell_b.svg', label: 'Shell' },
-                { icon: './icons/security.svg', label: 'IT Security' },
-              ],
-              description:
-                `The Minecraft Server project is a containerized solution for running a reliable game server with persistent storage for world data, settings, and logs.\n
-       It allows restarts and updates without losing progress, while key configuration values are handled through environment variables for simple management.\n
-       The project highlights my ability to build practical, stable, and easy-to-maintain services using modern Docker workflows.`,
-              docUrl: '/docs/projects/minecraft-server',
-              githubUrl: 'https://github.com/ognjenmanojlovic/minecraft-server',
-            },
-            {
-              id: 'wordpress',
-              name: 'WordPress',
-              image: './img/projects/wordpress.png',
-              tags: [
-                { icon: './icons/docker_b.svg', label: 'Docker' },
-                { icon: './icons/yaml_b.svg', label: 'Yaml' },
-                { icon: './icons/shell_b.svg', label: 'Shell' },
-                { icon: './icons/security.svg', label: 'IT Security' },
-              ],
-              description:
-                `A streamlined Docker Compose setup for WordPress and MySQL using official container images.\n
-       Persistent volumes protect data across restarts, while environment-based configuration keeps sensitive values out of source control and ensures reliable startup behavior.\n
-       This project was my approach to transforming a traditional CMS stack into a clean, stable, and production-ready containerized solution.`,
-              docUrl: '/docs/projects/wordpress-docker',
-              githubUrl: 'https://github.com/ognjenmanojlovic/wordpress-docker',
-            },
-            {
               id: 'trucks',
               name: 'Truck Signs API',
               image: './img/projects/trucksigns.png',
@@ -414,7 +416,7 @@ export default function ProjectHighlights(): JSX.Element {
   const seeMoreLabel = isGerman ? 'Mehr Projekte ansehen' : 'See more projects';
 
   const mobileFeaturedIds = useMemo(
-    () => ['conduit', 'babytools', 'juice', 'password-cracking'],
+    () => ['fastapi-devsecops', 'fastapi-kubernetes', 'soc-siem-lab', 'conduit'],
     []
   );
 
