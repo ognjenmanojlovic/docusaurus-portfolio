@@ -1092,7 +1092,7 @@ cosign verify \
 
 ## GitHub Container Registry
 
-![GHCR Packages](/img/projects/screenshots/fastapi-devsecops/img/ghcr-packages.png)
+![GHCR Packages](/img/projects/screenshots/fastapi-devsecops/ghcr-packages.png)
 
 ---
 
