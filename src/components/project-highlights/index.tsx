@@ -310,7 +310,7 @@ export default function ProjectHighlights(): JSX.Element {
             {
               id: 'soc-siem-lab',
               name: 'SOC & SIEM Lab',
-              image: './img/projects/SOC-SIEM-Lab.png',
+              image: './img/projects/screenshots/soc-lab/SOC-SIEM-Lab.png',
               tags: [
                 { icon: './icons/security.svg', label: 'IT Security' },
                 { icon: './icons/docker_b.svg', label: 'Docker' },
