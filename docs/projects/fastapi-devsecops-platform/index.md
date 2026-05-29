@@ -1098,13 +1098,13 @@ cosign verify \
 
 ## SBOM Artifacts
 
-![SBOM Artifacts](/img/projects/screenshots/fastapi-devsecops/img/sbom-artifacts.png)
+![SBOM Artifacts](/img/projects/screenshots/fastapi-devsecops/sbom-artifacts.png)
 
 ---
 
 ## Cosign Verification
 
-![Cosign Verification](/img/projects/screenshots/fastapi-devsecops/img/cosign-verification.png)
+![Cosign Verification](/img/projects/screenshots/fastapi-devsecops/cosign-verification.png)
 
 ---
 
