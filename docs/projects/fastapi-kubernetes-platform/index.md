@@ -1,7 +1,7 @@
 # FastAPI Kubernetes DevSecOps Platform
 
 <p align="center">
-  <img src="/img/projects/screenshots/fastapi-kubernetes/github-social-preview.png" alt="FastAPI DevSecOps Platform Banner" width="100%">
+  <img src="/img/projects/screenshots/fastapi-kubernetes/github-social-preview.png" alt="FastAPI DevSecOps Platform Banner" width="100%" />
 </p>
 
 A practical Kubernetes project that extends an existing FastAPI DevSecOps platform into a container-orchestrated deployment using **k3d**, **Kubernetes**, **Traefik Ingress**, **PostgreSQL**, **Helm**, and basic **Kubernetes security hardening**.

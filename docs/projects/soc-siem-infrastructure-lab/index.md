@@ -1,7 +1,7 @@
 # SOC & SIEM Infrastructure Lab
 
 <p align="center">
-  <img src="/img/projects/screenshots/soc-lab/SOC-SIEM-Lab.png" alt="soc-siem-lab" width="100%">
+  <img src="/img/projects/screenshots/soc-lab/SOC-SIEM-Lab.png" alt="soc-siem-lab" width="100%" />
 </p>
 
 > A practical Blue Team / SOC infrastructure lab built using Wazuh SIEM, File Integrity Monitoring (FIM), Fail2Ban, and a Cowrie SSH Honeypot to simulate realistic threat hunting, attack detection, and incident response workflows.

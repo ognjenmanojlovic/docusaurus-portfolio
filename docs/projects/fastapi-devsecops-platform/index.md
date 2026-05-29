@@ -1,7 +1,7 @@
 # FastAPI DevSecOps Platform
 
 <p align="center">
-  <img src="/img/projects/screenshots/fastapi-devsecops/github-social-preview.png" alt="FastAPI DevSecOps Platform Banner" width="100%">
+  <img src="/img/projects/screenshots/fastapi-devsecops/github-social-preview.png" alt="FastAPI DevSecOps Platform Banner" width="100%" />
 </p>
 
 > A modern DevSecOps showcase project based on the official **FastAPI Full Stack Template**, focused on secure CI/CD, automated security scanning, container hardening, software supply chain security, SBOM generation, GitHub Container Registry, and signed Docker images.
