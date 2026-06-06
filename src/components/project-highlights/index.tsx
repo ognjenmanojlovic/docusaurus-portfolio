@@ -149,9 +149,9 @@ export default function ProjectHighlights(): JSX.Element {
                 { icon: './icons/security.svg', label: 'IT Security' },
               ],
               description:
-                `Terraform & Ansible Lab ist ein praxisnahes Infrastructure-as-Code-Projekt für automatisiertes Linux-Provisioning, Server-Hardening und containerisierte Applikationsbereitstellung.\n
-      Die Umgebung nutzt eine Ubuntu-VM als Managed Host und ein MacBook als Control Node. Ansible automatisiert System-Updates, die Installation von Docker, die Konfiguration der UFW-Firewall, Fail2Ban, SSH-Hardening sowie das Deployment einer selbst gehosteten Gitea-Git-Plattform in einem Docker-Container.\n
-      Das Projekt demonstriert reproduzierbare Infrastruktur, sichere Remote-Administration, Konfigurationsmanagement und automatisierte Provisionierungsprozesse und zeigt, wie Infrastruktur und Anwendungsbereitstellung in einer realistischen lokalen DevSecOps-Umgebung vollständig über Code verwaltet werden können.`,
+                `Terraform & Ansible Secure Lab zeigt, wie Infrastructure as Code für automatisiertes Linux-Provisioning, System-Hardening und das Deployment selbst gehosteter Dienste eingesetzt werden kann.\n
+      Das Projekt kombiniert Terraform, Ansible, Docker und eine selbst gehostete Gitea-Instanz mit automatisiertem Paketmanagement, UFW-Firewall-Konfiguration, Fail2Ban-Schutz, SSH-Hardening und containerisierten Deployments.\n
+      Der Fokus liegt auf reproduzierbarer Infrastruktur, Konfigurationsmanagement und sicherer Automatisierung – zentrale Bestandteile moderner DevOps- und DevSecOps-Umgebungen.`,
               docUrl: '/docs/projects/terraform-ansible-lab',
               githubUrl: 'https://github.com/ognjenmanojlovic/terraform-ansible-secure-lab',
             },
@@ -301,9 +301,9 @@ export default function ProjectHighlights(): JSX.Element {
                 { icon: './icons/security.svg', label: 'IT Security' },
               ],
               description:
-                `Terraform & Ansible Secure Infra is a hands-on Infrastructure as Code project focused on automated Linux provisioning, server hardening and containerized application deployment.\n
-      The lab uses an Ubuntu VM as the managed host and a MacBook as the control node. Ansible automates system updates, Docker installation, UFW firewall configuration, Fail2Ban protection, SSH hardening and the deployment of a self-hosted Gitea Git service running in Docker.\n
-      This project demonstrates reproducible infrastructure, secure remote administration, configuration management and automated provisioning workflows while showcasing how infrastructure and application deployment can be managed through code in a realistic local DevSecOps environment.`,
+                `Terraform & Ansible Secure Lab demonstrates how Infrastructure as Code can be used to automate Linux provisioning, system hardening and self-hosted service deployment.\n
+      The project combines Terraform, Ansible, Docker, and a self-hosted Gitea instance with automated package management, UFW firewall configuration, Fail2Ban protection, SSH hardening and containerized deployments.\n
+      It focuses on reproducible infrastructure, configuration management and secure automation — core practices of modern DevOps and DevSecOps environments.`,
               docUrl: '/docs/projects/terraform-ansible-lab',
               githubUrl: 'https://github.com/ognjenmanojlovic/terraform-ansible-secure-lab',
             },
