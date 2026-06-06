@@ -1,7 +1,7 @@
 # Terraform & Ansible Secure Gitea Lab
 
 <p align="center">
-  <img src="/img/projects/screenshots/terraform-ansible/terraform-ansible-logo.png" alt="Terraform & Ansible Gitea Lab" width="100%">
+  <img src="/img/projects/screenshots/terraform-ansible/terraform-ansible-logo.png" alt="Terraform & Ansible Gitea Lab" width="100%" />
 </p>
 
 > Infrastructure as Code and Configuration Management project focused on automated Linux server provisioning, Docker deployment, and SSH hardening inside a local virtualization lab.
