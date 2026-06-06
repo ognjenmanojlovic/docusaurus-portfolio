@@ -139,6 +139,23 @@ export default function ProjectHighlights(): JSX.Element {
       isGerman
         ? [
             {
+              id: 'terraform-ansible-lab',
+              name: 'Terraform & Ansible Lab',
+              image: './img/projects/screenshots/terraform-ansible/terraform-ansible-logo.png',
+              tags: [
+                { icon: './icons/terraform.svg', label: 'Terraform' },
+                { icon: './icons/ansible.svg', label: 'Ansible' },
+                { icon: './icons/docker_b.svg', label: 'Docker' },
+                { icon: './icons/security.svg', label: 'IT Security' },
+              ],
+              description:
+                `Terraform & Ansible Lab ist ein praxisnahes Infrastructure-as-Code-Projekt für automatisiertes Linux-Provisioning, Server-Hardening und Docker-basiertes Deployment.\n
+      Die Umgebung nutzt eine Ubuntu-VM als Managed Host und ein MacBook als Control Node. Ansible automatisiert Docker, UFW Firewall, Fail2Ban, SSH Hardening und den Deployment-Prozess einer selbst gehosteten Gitea-Instanz.\n
+      Das Projekt zeigt reproduzierbare Infrastruktur, sichere Remote-Administration, Konfigurationsmanagement und CI-Validierung mit GitHub Actions – ein realistischer DevSecOps-Workflow im lokalen Lab.`,
+              docUrl: '/docs/projects/terraform-ansible-lab',
+              githubUrl: 'https://github.com/ognjenmanojlovic/terraform-ansible-secure-infra',
+            },
+            {
               id: 'fastapi-devsecops',
               name: 'FastAPI DevSecOps',
               image: './img/projects/screenshots/fastapi-devsecops/FastAPI-DevSecOps-Platform.png',
@@ -273,6 +290,23 @@ export default function ProjectHighlights(): JSX.Element {
             },
           ]
         : [
+            {
+              id: 'terraform-ansible-lab',
+              name: 'Terraform & Ansible Lab',
+              image: './img/projects/screenshots/terraform-ansible/terraform-ansible-logo.png',
+              tags: [
+                { icon: './icons/terraform.svg', label: 'Terraform' },
+                { icon: './icons/ansible.svg', label: 'Ansible' },
+                { icon: './icons/docker_b.svg', label: 'Docker' },
+                { icon: './icons/security.svg', label: 'IT Security' },
+              ],
+              description:
+                `Terraform & Ansible Secure Infra is a hands-on Infrastructure as Code project focused on automated Linux provisioning, server hardening, and Docker-based deployment.\n
+      The lab uses an Ubuntu VM as the managed host and a MacBook as the control node. Ansible automates Docker, UFW firewall rules, Fail2Ban, SSH hardening, and the deployment of a self-hosted Gitea instance.\n
+      This project demonstrates reproducible infrastructure, secure remote administration, configuration management, and CI validation with GitHub Actions — a realistic local DevSecOps workflow.`,
+              docUrl: '/docs/projects/terraform-ansible-lab',
+              githubUrl: 'https://github.com/ognjenmanojlovic/terraform-ansible-secure-infra',
+            },
             {
               id: 'fastapi-devsecops',
               name: 'FastAPI DevSecOps',
@@ -416,7 +450,7 @@ export default function ProjectHighlights(): JSX.Element {
   const seeMoreLabel = isGerman ? 'Mehr Projekte ansehen' : 'See more projects';
 
   const mobileFeaturedIds = useMemo(
-    () => ['fastapi-devsecops', 'fastapi-kubernetes', 'soc-siem-lab', 'conduit'],
+    () => ['terraform-ansible-lab', 'fastapi-devsecops', 'fastapi-kubernetes', 'soc-siem-lab'],
     []
   );
 

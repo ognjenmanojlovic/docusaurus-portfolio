@@ -7,6 +7,7 @@ const sidebars: SidebarsConfig = {
       label: 'Projects',
       link: { type: 'doc', id: 'projects/index' },
       items: [
+        'projects/terraform-ansible-lab/index',
         'projects/fastapi-devsecops-platform/index',
         'projects/fastapi-kubernetes-platform/index',
         'projects/soc-siem-infrastructure-lab/index',
