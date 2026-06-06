@@ -140,7 +140,7 @@ export default function ProjectHighlights(): JSX.Element {
         ? [
             {
               id: 'terraform-ansible-lab',
-              name: 'Terraform & Ansible Lab',
+              name: 'Terraform/Ansible Lab',
               image: './img/projects/screenshots/terraform-ansible/terraform-ansible-logo.png',
               tags: [
                 { icon: './icons/terraform.svg', label: 'Terraform' },
@@ -153,7 +153,7 @@ export default function ProjectHighlights(): JSX.Element {
       Die Umgebung nutzt eine Ubuntu-VM als Managed Host und ein MacBook als Control Node. Ansible automatisiert Docker, UFW Firewall, Fail2Ban, SSH Hardening und den Deployment-Prozess einer selbst gehosteten Gitea-Instanz.\n
       Das Projekt zeigt reproduzierbare Infrastruktur, sichere Remote-Administration, Konfigurationsmanagement und CI-Validierung mit GitHub Actions – ein realistischer DevSecOps-Workflow im lokalen Lab.`,
               docUrl: '/docs/projects/terraform-ansible-lab',
-              githubUrl: 'https://github.com/ognjenmanojlovic/terraform-ansible-secure-infra',
+              githubUrl: 'https://github.com/ognjenmanojlovic/terraform-ansible-secure-lab',
             },
             {
               id: 'fastapi-devsecops',
@@ -292,7 +292,7 @@ export default function ProjectHighlights(): JSX.Element {
         : [
             {
               id: 'terraform-ansible-lab',
-              name: 'Terraform & Ansible Lab',
+              name: 'Terraform/Ansible Lab',
               image: './img/projects/screenshots/terraform-ansible/terraform-ansible-logo.png',
               tags: [
                 { icon: './icons/terraform.svg', label: 'Terraform' },
@@ -305,7 +305,7 @@ export default function ProjectHighlights(): JSX.Element {
       The lab uses an Ubuntu VM as the managed host and a MacBook as the control node. Ansible automates Docker, UFW firewall rules, Fail2Ban, SSH hardening, and the deployment of a self-hosted Gitea instance.\n
       This project demonstrates reproducible infrastructure, secure remote administration, configuration management, and CI validation with GitHub Actions — a realistic local DevSecOps workflow.`,
               docUrl: '/docs/projects/terraform-ansible-lab',
-              githubUrl: 'https://github.com/ognjenmanojlovic/terraform-ansible-secure-infra',
+              githubUrl: 'https://github.com/ognjenmanojlovic/terraform-ansible-secure-lab',
             },
             {
               id: 'fastapi-devsecops',
