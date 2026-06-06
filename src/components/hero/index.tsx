@@ -20,17 +20,17 @@ export default function Hero(): JSX.Element {
 
   const blurb = isGerman ? (
     <>
-      Ich entwickle sichere und zuverlässige IT-Systeme, die Unternehmen vom täglichen Betrieb bis hin zu produktionsreifen Umgebungen unterstützen. Mein Hintergrund umfasst Systemadministration, Second-Level-Support, Infrastruktur und IT-Sicherheit mit Fokus auf stabile, geschützte und effizient betriebene Systeme.
+      Ich entwickle sichere und zuverlässige IT-Systeme mit Schwerpunkt auf Automatisierung, Infrastruktur und IT-Sicherheit. Mein Hintergrund umfasst Systemadministration, Second-Level-Support, DevSecOps-Praktiken und Cyber Security mit Fokus auf stabile, abgesicherte und produktionsreife Umgebungen.
       <br />
       <br />
-      Durch praxisnahes DevSecOps-Training arbeite ich mit Containerisierung, CI/CD-Pipelines, Automatisierung, System-Hardening und sicheren Deployments. Gestützt auf mein technisches Fundament aus der HTL Anichstraße in Innsbruck, praktische Erfahrung und den kontinuierlichen Antrieb, mich im Bereich Cyber Security weiterzuentwickeln, konzentriere ich mich darauf, Systeme zu schaffen, die heute belastbar und für morgen vorbereitet sind.
+      Durch praxisnahe Projekte mit Terraform, Ansible, Kubernetes, Docker, CI/CD-Pipelines sowie SOC- und SIEM-Technologien konnte ich praktische Erfahrung in Infrastrukturautomatisierung, System-Hardening, sicheren Deployments und Security Monitoring sammeln. Aufbauend auf meiner Ausbildung an der HTL Anichstraße in Innsbruck und meiner Begeisterung für Cyber Security konzentriere ich mich darauf, Systeme zu schaffen, die sicher, skalierbar und zukunftsfähig sind.
     </>
   ) : (
     <>
-      I build secure and reliable IT systems that support businesses from daily operations to production-ready environments. My background includes system administration, second-level support, infrastructure and IT security with a focus on stable, protected and efficiently operated systems.
+      I build secure and reliable IT systems with a focus on automation, infrastructure and cyber security. My background includes system administration, second-level support, DevSecOps practices and IT security, with an emphasis on resilient, well-managed and production-ready environments.
       <br />
       <br />
-      Through hands-on DevSecOps training, I work with containerization, CI/CD pipelines, automation, system hardening and secure deployments. Backed by my technical foundation from HTL Anichstraße from Innsbruck, real-world experience and a continuous drive to grow in cyber security, I focus on creating systems that are resilient today and prepared for tomorrow.
+      Through hands-on projects with Terraform, Ansible, Kubernetes, Docker, CI/CD pipelines and SOC & SIEM technologies, I have gained practical experience in infrastructure automation, system hardening, secure deployments and security monitoring. Backed by my technical foundation from HTL Anichstraße in Innsbruck and a continuous drive to grow in cyber security, I focus on building systems that are secure, scalable and prepared for tomorrow.
     </>
   );
 
