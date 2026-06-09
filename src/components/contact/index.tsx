@@ -25,17 +25,17 @@ export default function Contact(): JSX.Element {
               <li>
                 {isGerman
                   ? 'Offen für Cyber Security, DevSecOps und IT-Infrastruktur Rollen'
-                  : 'Open to Cyber Security, DevSecOps, and IT Infrastructure roles'}
+                  : 'Open to Cyber Security, DevSecOps and IT Infrastructure roles'}
               </li>
               <li>
                 {isGerman
                   ? 'Erfahrung mit sicheren Deployments, Automatisierung und Systembetrieb'
-                  : 'Experienced with secure deployments, automation, and system operations'}
+                  : 'Experienced with secure deployments, automation and system operations'}
               </li>
               <li>
                 {isGerman
                   ? 'Analytische Denkweise, schnelle Auffassungsgabe und verlässlicher Teamplayer'
-                  : 'Strong analytical mindset, fast learner, and reliable team player'}
+                  : 'Strong analytical mindset, fast learner and reliable team player'}
               </li>
               <li>
                 {isGerman

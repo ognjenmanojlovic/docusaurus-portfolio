@@ -139,6 +139,23 @@ export default function ProjectHighlights(): JSX.Element {
       isGerman
         ? [
             {
+              id: 'aws-cloud-security-lab',
+              name: 'AWS Security Lab',
+              image: './img/projects/screenshots/aws-security-lab/aws-security-lab.png',
+              tags: [
+                { icon: './icons/aws.svg', label: 'AWS' },
+                { icon: './icons/terraform.svg', label: 'Terraform' },
+                { icon: './icons/ansible.svg', label: 'Ansible' },
+                { icon: './icons/security.svg', label: 'IT Security' },
+              ],
+              description:
+                `AWS Cloud Security Lab zeigt, wie eine sichere Cloud-Umgebung mit Terraform, Ansible und nativen AWS-Security-Services aufgebaut wird.\n
+      Das Projekt kombiniert EC2, S3, IAM, CloudWatch, CloudTrail und AWS Config mit Linux-Hardening, Monitoring, Alerting und Audit Logging.\n
+      Der Fokus liegt auf Infrastructure as Code, automatisierter Absicherung und Cloud-Security-Basics nach dem Least-Privilege-Prinzip.`,
+              docUrl: '/docs/projects/aws-security-lab',
+              githubUrl: 'https://github.com/ognjenmanojlovic/aws-cloud-security-lab',
+            },
+            {
               id: 'terraform-ansible-lab',
               name: 'Terraform/Ansible',
               image: './img/projects/screenshots/terraform-ansible/terraform-ansible-logo.png',
@@ -271,25 +288,25 @@ export default function ProjectHighlights(): JSX.Element {
               docUrl: '/docs/projects/password-cracking',
               githubUrl: 'https://github.com/ognjenmanojlovic/docusaurus-portfolio/tree/main/docs/password-cracking',
             },
-            {
-              id: 'trucks',
-              name: 'Truck Signs API',
-              image: './img/projects/trucksigns.png',
-              tags: [
-                { icon: './icons/docker_b.svg', label: 'Docker' },
-                { icon: './icons/yaml_b.svg', label: 'Yaml' },
-                { icon: './icons/shell_b.svg', label: 'Shell' },
-                { icon: './icons/python.svg', label: 'Python' },
-              ],
-              description:
-                `Ein Dockerisierter Django-E-Commerce-Backend-Service mit PostgreSQL für zuverlässiges Datenmanagement.\n
-       Die Services laufen in einem dedizierten Container-Netzwerk, während Environment-Variablen Konfiguration und sensible Einstellungen sicher verwalten. Admin-Zugang und Produktmanagement sind von Anfang an integriert.\n
-       Dieses Projekt spiegelt meinen Fokus wider, Backend-Systeme zu bauen, die sicher, strukturiert und praxisnah einsetzbar sind.`,
-              docUrl: '/docs/projects/truck-signs-api',
-              githubUrl: 'https://github.com/ognjenmanojlovic/truck_signs_api',
-            },
           ]
         : [
+            {
+              id: 'aws-cloud-security-lab',
+              name: 'AWS Security Lab',
+              image: './img/projects/screenshots/aws-security-lab/aws-security-lab.png',
+              tags: [
+                { icon: './icons/aws.svg', label: 'AWS' },
+                { icon: './icons/terraform.svg', label: 'Terraform' },
+                { icon: './icons/ansible.svg', label: 'Ansible' },
+                { icon: './icons/security.svg', label: 'IT Security' },
+              ],
+              description:
+                `AWS Cloud Security Lab demonstrates how to build a secure cloud environment using Terraform, Ansible, and native AWS security services.\n
+      The project combines EC2, S3, IAM, CloudWatch, CloudTrail, and AWS Config with Linux hardening, monitoring, alerting, and audit logging.\n
+      It focuses on Infrastructure as Code, automated hardening, and cloud security fundamentals based on the principle of least privilege.`,
+              docUrl: '/docs/projects/aws-security-lab',
+              githubUrl: 'https://github.com/ognjenmanojlovic/aws-cloud-security-lab',
+            },
             {
               id: 'terraform-ansible-lab',
               name: 'Terraform/Ansible',
@@ -423,23 +440,6 @@ export default function ProjectHighlights(): JSX.Element {
               docUrl: '/docs/projects/password-cracking',
               githubUrl: 'https://github.com/ognjenmanojlovic/docusaurus-portfolio/tree/main/docs/password-cracking',
             },
-            {
-              id: 'trucks',
-              name: 'Truck Signs API',
-              image: './img/projects/trucksigns.png',
-              tags: [
-                { icon: './icons/docker_b.svg', label: 'Docker' },
-                { icon: './icons/yaml_b.svg', label: 'Yaml' },
-                { icon: './icons/shell_b.svg', label: 'Shell' },
-                { icon: './icons/python.svg', label: 'Python' },
-              ],
-              description:
-                `A Dockerized Django e-commerce backend powered by PostgreSQL for reliable data management.\n
-       The services run on a dedicated container network, while environment variables are used to handle configuration and sensitive settings securely. Admin access and product management are included from the start.\n
-       This project reflects my focus on building backend systems that are secure, organized, and ready for practical deployment.`,
-              docUrl: '/docs/projects/truck-signs-api',
-              githubUrl: 'https://github.com/ognjenmanojlovic/truck_signs_api',
-            },
           ],
     [isGerman]
   );
@@ -450,7 +450,7 @@ export default function ProjectHighlights(): JSX.Element {
   const seeMoreLabel = isGerman ? 'Mehr Projekte ansehen' : 'See more projects';
 
   const mobileFeaturedIds = useMemo(
-    () => ['terraform-ansible-lab', 'fastapi-devsecops', 'fastapi-kubernetes', 'soc-siem-lab'],
+    () => ['aws-cloud-security-lab', 'terraform-ansible-lab', 'fastapi-devsecops', 'fastapi-kubernetes'],
     []
   );
 
