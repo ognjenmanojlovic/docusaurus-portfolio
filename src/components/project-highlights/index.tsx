@@ -4,7 +4,7 @@ import styles from './project-highlights.module.css';
 
 interface Tag {
   icon: string;
-  label: string;
+  label?: string;
 }
 
 interface Project {
@@ -43,10 +43,10 @@ function ProjectCard({
 
           <div className={styles.detailCol}>
             <div className={styles.tags}>
-              {project.tags.map((tag) => (
-                <span key={`${project.id}-${tag.label}`} className={styles.tag}>
+              {project.tags.map((tag, index) => (
+                <span key={`${project.id}-${index}`} className={styles.tag}>
                   <img src={tag.icon} alt="" className={styles.tagIcon} />
-                  <span className={styles.tagText}>{tag.label}</span>
+                  {tag.label && <span className={styles.tagText}>{tag.label}</span>}
                 </span>
               ))}
             </div>
@@ -88,10 +88,10 @@ function ProjectCard({
 
       <div className={styles.cardBody}>
         <div className={styles.tags}>
-          {project.tags.map((tag) => (
-            <span key={`${project.id}-${tag.label}`} className={styles.tag}>
+          {project.tags.map((tag, index) => (
+            <span key={`${project.id}-${index}`} className={styles.tag}>
               <img src={tag.icon} alt="" className={styles.tagIcon} />
-              <span className={styles.tagText}>{tag.label}</span>
+              {tag.label && <span className={styles.tagText}>{tag.label}</span>}
             </span>
           ))}
         </div>
@@ -143,7 +143,7 @@ export default function ProjectHighlights(): JSX.Element {
               name: 'AWS Security Lab',
               image: './img/projects/screenshots/aws-security-lab/aws-security-lab.png',
               tags: [
-                { icon: './icons/aws.svg', label: 'AWS' },
+                { icon: './icons/aws.svg' },
                 { icon: './icons/terraform.svg', label: 'Terraform' },
                 { icon: './icons/ansible.svg', label: 'Ansible' },
                 { icon: './icons/security.svg', label: 'IT Security' },
@@ -295,7 +295,7 @@ export default function ProjectHighlights(): JSX.Element {
               name: 'AWS Security Lab',
               image: './img/projects/screenshots/aws-security-lab/aws-security-lab.png',
               tags: [
-                { icon: './icons/aws.svg', label: 'AWS' },
+                { icon: './icons/aws.svg' },
                 { icon: './icons/terraform.svg', label: 'Terraform' },
                 { icon: './icons/ansible.svg', label: 'Ansible' },
                 { icon: './icons/security.svg', label: 'IT Security' },
