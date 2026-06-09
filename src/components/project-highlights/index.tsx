@@ -301,9 +301,9 @@ export default function ProjectHighlights(): JSX.Element {
                 { icon: './icons/security.svg', label: 'IT Security' },
               ],
               description:
-                `AWS Cloud Security Lab demonstrates how to build a secure cloud environment using Terraform, Ansible, and native AWS security services.\n
-      The project combines EC2, S3, IAM, CloudWatch, CloudTrail, and AWS Config with Linux hardening, monitoring, alerting, and audit logging.\n
-      It focuses on Infrastructure as Code, automated hardening, and cloud security fundamentals based on the principle of least privilege.`,
+                `AWS Cloud Security Lab demonstrates how to build a secure cloud environment using Terraform, Ansible and native AWS security services.\n
+      The project combines EC2, S3, IAM, CloudWatch, CloudTrail and AWS Config with Linux hardening, monitoring, alerting and audit logging.\n
+      It focuses on Infrastructure as Code, automated hardening and cloud security fundamentals based on the principle of least privilege.`,
               docUrl: '/docs/projects/aws-security-lab',
               githubUrl: 'https://github.com/ognjenmanojlovic/aws-cloud-security-lab',
             },
