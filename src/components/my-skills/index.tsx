@@ -52,52 +52,22 @@ export default function MySkills(): JSX.Element {
       isGerman
         ? [
             {
-              icon: './icons/docker.svg',
-              label: 'Docker',
-              bullets: [
-                'Containerisierte App-Setups',
-                'Docker-Compose-Orchestrierung',
-                'Volume- und Netzwerk-Konfiguration',
-                'Konsistente Umgebungen',
-              ],
-            },
-            {
-              icon: './icons/yaml.svg',
-              label: 'YAML',
-              bullets: [
-                'Docker-Compose-Konfigurationen',
-                'CI/CD-Workflow-Dateien',
-                'Strukturierte App-Einstellungen',
-                'Wiederverwendbare Templates',
-              ],
-            },
-            {
-              icon: './icons/githubactions.svg',
-              label: 'CI/CD',
-              bullets: [
-                'Automatisierte Build-Workflows',
-                'GitHub-Actions-Pipelines',
-                'Tests vor Releases',
-                'Zuverlässige Deployments',
-              ],
-            },
-            {
               icon: './icons/security.svg',
               label: 'IT Security',
               bullets: [
                 'Juice-Shop-Sicherheitslabore',
-                'Firewall-Regeln und Segmentierung',
-                'Awareness für Angriffsflächen',
-                'Best Practices für Zugriffskontrolle',
+                'SOC- und SIEM-Monitoring',
+                'Security-Hardening',
+                'Awareness für Schwachstellen',
               ],
             },
             {
               icon: './icons/systemadministration.svg',
               label: 'System Administration',
               bullets: [
+                'Linux-Server-Administration',
                 'Benutzer- und Zugriffsverwaltung',
-                'Endpoint- und Server-Support',
-                'Monitoring und Wartung',
+                'Service-Monitoring und Wartung',
                 'Operatives Troubleshooting',
               ],
             },
@@ -106,90 +76,90 @@ export default function MySkills(): JSX.Element {
               label: 'Networking',
               bullets: [
                 'Netzwerkgrundlagen',
-                'Grundlagen der Traffic-Analyse',
-                'Segmentierung und Zugriffskontrolle',
+                'Firewall-Regeln und Segmentierung',
+                'Traffic-Analyse-Basics',
                 'Konnektivitäts-Troubleshooting',
               ],
             },
             {
-              icon: './icons/python.svg',
-              label: 'Python',
-              bullets: [
-                'Skripte für Passwort-Audits',
-                'Port-Scanning-Tools',
-                'Tools zur Metadaten-Extraktion',
-                'Utilities für Privacy-Cleanup',
-              ],
-            },
-            {
-              icon: './icons/shell.svg',
-              label: 'Shell Scripting',
-              bullets: [
-                'Linux-Setup-Skripte',
-                'Automatisierung von Routineaufgaben',
-                'Service-Management',
-                'Terminal-Troubleshooting',
-              ],
-            },
-            {
-              icon: './icons/docusaurus.svg',
-              label: 'Documentation',
-              bullets: [
-                'Docusaurus-Projektdokumentation',
-                'Markdown-Content-Management',
-                'Strukturierte Wissensdatenbanken',
-                'Statische Seitengenerierung',
-              ],
-            },
-          ]
-        : [
-            {
               icon: './icons/docker.svg',
               label: 'Docker',
               bullets: [
-                'Containerized application setups',
-                'Docker Compose orchestration',
-                'Volume and network configuration',
-                'Consistent environments',
-              ],
-            },
-            {
-              icon: './icons/yaml.svg',
-              label: 'YAML',
-              bullets: [
-                'Docker Compose configs',
-                'CI/CD workflow files',
-                'Structured app settings',
-                'Reusable templates',
+                'Containerisierte App-Setups',
+                'Docker-Compose-Orchestrierung',
+                'Persistente Volumes und Netzwerke',
+                'Reproduzierbare Lab-Umgebungen',
               ],
             },
             {
               icon: './icons/githubactions.svg',
               label: 'CI/CD',
               bullets: [
-                'Automated build workflows',
-                'GitHub Actions pipelines',
-                'Testing before releases',
-                'Reliable deployments',
+                'GitHub-Actions-Pipelines',
+                'Security-Scans im Workflow',
+                'Image-Builds und Artefakte',
+                'Automatisierte Deployments',
               ],
             },
+            {
+              icon: './icons/python.svg',
+              label: 'Python',
+              bullets: [
+                'Security-Tools und Skripte',
+                'Log-Analyse und Reports',
+                'Port-Scanning-Utilities',
+                'File-Integrity-Checks',
+              ],
+            },
+            {
+              icon: './icons/kubernetes.svg',
+              label: 'Kubernetes',
+              bullets: [
+                'k3d-Cluster-Deployments',
+                'Helm-Charts und Manifeste',
+                'Services, Ingress und Namespaces',
+                'Container-Hardening im Cluster',
+              ],
+            },
+            {
+              icon: './icons/terraform.svg',
+              label: 'Terraform',
+              bullets: [
+                'Infrastructure as Code',
+                'Strukturierte Lab-Setups',
+                'Wiederverwendbare Konfigurationen',
+                'Basis für Cloud-Provisioning',
+              ],
+            },
+            {
+              icon: './icons/cloud.svg',
+              label: 'Cloud',
+              bullets: [
+                'AWS-Grundlagen im Lab',
+                'EC2, S3 und IAM Basics',
+                'Monitoring und Audit-Logging',
+                'Sichere Cloud-Konfigurationen',
+              ],
+            },
+          ]
+        : [
             {
               icon: './icons/security.svg',
               label: 'IT Security',
               bullets: [
                 'Juice Shop security labs',
-                'Firewall rules and segmentation',
-                'Attack surface awareness',
-                'Access control best practices',
+                'SOC & SIEM monitoring',
+                'Security hardening',
+                'Vulnerability awareness',
               ],
             },
             {
               icon: './icons/systemadministration.svg',
               label: 'System Administration',
               bullets: [
+                'Linux server administration',
                 'User and access management',
-                'Endpoint and server support',
-                'Monitoring and maintenance',
+                'Service monitoring and maintenance',
                 'Operational troubleshooting',
               ],
             },
@@ -198,39 +168,69 @@ export default function MySkills(): JSX.Element {
               label: 'Networking',
               bullets: [
                 'Network fundamentals',
+                'Firewall rules and segmentation',
                 'Traffic analysis basics',
-                'Segmentation and access control',
                 'Connectivity troubleshooting',
+              ],
+            },
+            {
+              icon: './icons/docker.svg',
+              label: 'Docker',
+              bullets: [
+                'Containerized application setups',
+                'Docker Compose orchestration',
+                'Persistent volumes and networks',
+                'Reproducible lab environments',
+              ],
+            },
+            {
+              icon: './icons/githubactions.svg',
+              label: 'CI/CD',
+              bullets: [
+                'GitHub Actions pipelines',
+                'Security scans in workflows',
+                'Image builds and artifacts',
+                'Automated deployments',
               ],
             },
             {
               icon: './icons/python.svg',
               label: 'Python',
               bullets: [
-                'Password audit scripts',
-                'Port scanning tools',
-                'Metadata extraction tools',
-                'Privacy cleanup utilities',
+                'Security tools and scripts',
+                'Log analysis and reports',
+                'Port scanning utilities',
+                'File integrity checks',
               ],
             },
             {
-              icon: './icons/shell.svg',
-              label: 'Shell Scripting',
+              icon: './icons/kubernetes.svg',
+              label: 'Kubernetes',
               bullets: [
-                'Linux setup scripts',
-                'Routine task automation',
-                'Service management',
-                'Terminal troubleshooting',
+                'k3d cluster deployments',
+                'Helm charts and manifests',
+                'Services, Ingress and namespaces',
+                'Container hardening in clusters',
               ],
             },
             {
-              icon: './icons/docusaurus.svg',
-              label: 'Documentation',
+              icon: './icons/terraform.svg',
+              label: 'Terraform',
               bullets: [
-                'Docusaurus project docs',
-                'Markdown content management',
-                'Structured knowledge bases',
-                'Static site generation',
+                'Infrastructure as Code',
+                'Structured lab setups',
+                'Reusable configurations',
+                'Cloud provisioning basics',
+              ],
+            },
+            {
+              icon: './icons/cloud.svg',
+              label: 'Cloud',
+              bullets: [
+                'AWS fundamentals in labs',
+                'EC2, S3 and IAM basics',
+                'Monitoring and audit logging',
+                'Secure cloud configurations',
               ],
             },
           ],
@@ -262,6 +262,7 @@ export default function MySkills(): JSX.Element {
           best = i;
         }
       }
+
       setPage(best);
     };
 
@@ -275,8 +276,10 @@ export default function MySkills(): JSX.Element {
   const scrollToPage = (i: number) => {
     const root = contentRef.current;
     if (!root) return;
+
     const rows = root.querySelectorAll<HTMLElement>(`.${styles.row}`);
     const t = rows[i];
+
     if (t) root.scrollTo({ left: t.offsetLeft, behavior: 'smooth' });
   };
 
