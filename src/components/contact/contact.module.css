@@ -1,18 +1,21 @@
 .contact {
   background-color: #262E34;
   color: white;
-  padding: 0 48px;
-  padding-top: 80px;
+  padding: 80px 48px 48px;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .container {
   width: 100%;
-  max-width: 1280px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: clamp(48px, 12vw, 240px);
-  margin: 0 auto;
   flex-wrap: wrap;
 }
 
@@ -34,7 +37,7 @@
   font-size: clamp(32px, 6vw, 64px);
   line-height: 120%;
   letter-spacing: 0%;
-  margin-bottom: 32px;
+  margin: 0 0 32px;
   text-align: left;
 }
 
@@ -45,6 +48,7 @@
   font-size: 18px;
   line-height: 120%;
   letter-spacing: 0%;
+  margin: 0 0 20px;
 }
 
 .list {
@@ -52,6 +56,7 @@
   flex-direction: column;
   list-style-type: disc;
   padding-left: 1.2rem;
+  margin: 0;
   font-family: Quicksand;
   font-weight: 400;
   font-style: Regular;
@@ -68,6 +73,7 @@
   font-size: clamp(18px, 2.2vw, 24px);
   line-height: 120%;
   letter-spacing: 0%;
+  margin: 0;
   padding-bottom: 20px;
 }
 
@@ -88,7 +94,10 @@
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 1rem;
+}
 
+.details li:last-child {
+  margin-bottom: 0;
 }
 
 .details img {
@@ -145,10 +154,9 @@
 
 @media (max-width: 768px) {
   .contact {
-  background-color: #262E34;
-  color: white;
-  padding: 0 24px;
-  padding-top: 80px;
+    background-color: #262E34;
+    color: white;
+    padding: 80px 24px 32px;
   }
 
   .container {
@@ -163,12 +171,15 @@
     font-size: 32px;
     line-height: 120%;
     letter-spacing: 0%;
-    margin-bottom: 32px;
+    margin: 0 0 32px;
     text-align: left;
   }
 
   .right {
-    padding-top: 0px;
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+    padding-top: 0;
   }
 
   .subtitle {
@@ -179,6 +190,7 @@
     line-height: 120%;
     letter-spacing: 0%;
     padding-bottom: 0;
+    margin-bottom: 20px;
   }
 
   .list {

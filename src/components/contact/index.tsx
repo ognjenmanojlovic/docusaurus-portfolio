@@ -8,7 +8,7 @@ export default function Contact(): JSX.Element {
 
   return (
     <section id="contact" className={styles.contact}>
-      <div className="section">
+      <div className={styles.inner}>
         <div className={styles.container}>
           <div className={styles.left}>
             <h2 className={styles.title}>
