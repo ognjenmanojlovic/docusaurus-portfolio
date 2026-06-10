@@ -143,7 +143,7 @@ export default function ProjectHighlights(): JSX.Element {
               name: 'AWS Security Lab',
               image: './img/projects/screenshots/aws-security-lab/aws-security-lab.png',
               tags: [
-                { icon: './icons/aws.svg' },
+                { icon: './icons/cloud.svg', label: 'Cloud' },
                 { icon: './icons/terraform.svg', label: 'Terraform' },
                 { icon: './icons/ansible.svg', label: 'Ansible' },
                 { icon: './icons/security.svg', label: 'IT Security' },
@@ -194,7 +194,7 @@ export default function ProjectHighlights(): JSX.Element {
               name: 'FastAPI Kubernetes',
               image: './img/projects/screenshots/fastapi-kubernetes/FastAPI-Kubernetes-Platform.png',
               tags: [
-                { icon: './icons/yaml_b.svg', label: 'Yaml' },
+                { icon: './icons/kubernetes.svg', label: 'Kubernetes' },
                 { icon: './icons/docker_b.svg', label: 'Docker' },
                 { icon: './icons/githubactions_b.svg', label: 'CI/CD' },
                 { icon: './icons/security.svg', label: 'IT Security' },
@@ -213,7 +213,7 @@ export default function ProjectHighlights(): JSX.Element {
               tags: [
                 { icon: './icons/security.svg', label: 'IT Security' },
                 { icon: './icons/docker_b.svg', label: 'Docker' },
-                { icon: './icons/shell_b.svg', label: 'Shell' },
+                { icon: './icons/cloud.svg', label: 'Cloud' },
                 { icon: './icons/systemadministration.svg', label: 'Sysadmin' },
               ],
               description:
@@ -232,6 +232,7 @@ export default function ProjectHighlights(): JSX.Element {
                 { icon: './icons/shell_b.svg', label: 'Shell' },
                 { icon: './icons/docker_b.svg', label: 'Docker' },
                 { icon: './icons/githubactions_b.svg', label: 'CI/CD' },
+                { icon: './icons/cloud.svg', label: 'Cloud' }
               ],
               description:
                 `Conduit Container ist mein Ansatz, Full-Stack-Anwendungen sicher und zuverlässig bereitzustellen.\n
@@ -248,6 +249,7 @@ export default function ProjectHighlights(): JSX.Element {
                 { icon: './icons/docker_b.svg', label: 'Docker' },
                 { icon: './icons/shell_b.svg', label: 'Shell' },
                 { icon: './icons/python.svg', label: 'Python' },
+                { icon: './icons/cloud.svg', label: 'Cloud' }
               ],
               description:
                 `Ein Django-basierter Shop, der als containerisierter Service mit einem eigenen Dockerfile umgesetzt wurde, um Python-Umgebung und Abhängigkeiten sauber zu steuern.\n
@@ -295,7 +297,7 @@ export default function ProjectHighlights(): JSX.Element {
               name: 'AWS Security Lab',
               image: './img/projects/screenshots/aws-security-lab/aws-security-lab.png',
               tags: [
-                { icon: './icons/aws.svg' },
+                { icon: './icons/cloud.svg', label: 'Cloud' },
                 { icon: './icons/terraform.svg', label: 'Terraform' },
                 { icon: './icons/ansible.svg', label: 'Ansible' },
                 { icon: './icons/security.svg', label: 'IT Security' },
@@ -346,7 +348,7 @@ export default function ProjectHighlights(): JSX.Element {
               name: 'FastAPI Kubernetes',
               image: './img/projects/screenshots/fastapi-kubernetes/FastAPI-Kubernetes-Platform.png',
               tags: [
-                { icon: './icons/yaml_b.svg', label: 'Yaml' },
+                { icon: './icons/kubernetes.svg', label: 'Kubernetes' },
                 { icon: './icons/docker_b.svg', label: 'Docker' },
                 { icon: './icons/githubactions_b.svg', label: 'CI/CD' },
                 { icon: './icons/security.svg', label: 'IT Security' },
@@ -365,7 +367,7 @@ export default function ProjectHighlights(): JSX.Element {
               tags: [
                 { icon: './icons/security.svg', label: 'IT Security' },
                 { icon: './icons/docker_b.svg', label: 'Docker' },
-                { icon: './icons/shell_b.svg', label: 'Shell' },
+                { icon: './icons/cloud.svg', label: 'Cloud' },
                 { icon: './icons/systemadministration.svg', label: 'Sysadmin' },
               ],
               description:
@@ -384,6 +386,7 @@ export default function ProjectHighlights(): JSX.Element {
                 { icon: './icons/shell_b.svg', label: 'Shell' },
                 { icon: './icons/docker_b.svg', label: 'Docker' },
                 { icon: './icons/githubactions_b.svg', label: 'CI/CD' },
+                { icon: './icons/cloud.svg', label: 'Cloud' }
               ],
               description:
                 `Conduit Container is my approach to deploying full-stack applications in a secure and reliable way.\n
@@ -400,6 +403,7 @@ export default function ProjectHighlights(): JSX.Element {
                 { icon: './icons/docker_b.svg', label: 'Docker' },
                 { icon: './icons/shell_b.svg', label: 'Shell' },
                 { icon: './icons/python.svg', label: 'Python' },
+                { icon: './icons/cloud.svg', label: 'Cloud' }
               ],
               description:
                 `A Django-based shop packaged as a containerized service with a custom Dockerfile to manage the Python environment and dependencies.\n
